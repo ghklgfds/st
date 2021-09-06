@@ -15,6 +15,7 @@ with open('tenki.json', 'r', encoding="UTF-8") as f:
   data = json.load(f)
 # 読み出したデータを解析 --- (*2)
 tank=[]
+tank2=[]
 for area in data:
   name = area['name']
   
@@ -28,9 +29,11 @@ for area in data:
         #
         b=[times[i], ":", v]
         #
-        c=[name,b]
+        
         #c2=str[c[1]].replace["u3000",""]
-        tank.append(c)
+        tank.append(b)
+     tank2.append(name,tank)
+     tank=[]
         
 
-st.title(tank)
+st.title(tank2)
