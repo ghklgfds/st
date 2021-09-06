@@ -18,5 +18,7 @@ st.text(df.columns)
 #st.write(df)
 st.write(
 px.line(df, title="sample figure")
+)
+st.write (
 px.line(df2, title="sample figure")
 )
