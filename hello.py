@@ -20,12 +20,13 @@ for area in data:
   name = area['name']
   
 
-  st.text("[", name, "]")
+  st.text(name)
   
   for ts in area['srf']['timeSeries']:
     times = [n for n in ts['timeDefines']]
     if 'weathers' in ts['areas']:
       for i,v in enumerate(ts['areas']['weathers']):
-        st.text("[times[i], ':', v]")
+        st.text(times[i])
+        st.text (v)
         
 
