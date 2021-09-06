@@ -17,7 +17,7 @@ with open('tenki.json', 'r', encoding="UTF-8") as f:
 tank=[]
 for area in data:
   name = area['name']
-  tank.append(name)
+  
 
   print("[", name, "]")
   for ts in area['srf']['timeSeries']:
@@ -26,5 +26,8 @@ for area in data:
       for i,v in enumerate(ts['areas']['weathers']):
         print(times[i], ":", v)
         b=(times[i], ":", v)
+        c=[name,b]
+        tank.append(c)
+        
 
 st.title(tank)
