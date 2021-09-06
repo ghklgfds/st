@@ -8,4 +8,4 @@ start=dt.date(2021,1,1)
 end=dt.date(2021,3,1)
 code="CBBTUSD"
 df=web.DataReader(code,"fred",start,end)
-st.text(df.head(5)
+st.text(df.head(5))
