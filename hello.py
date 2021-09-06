@@ -32,7 +32,8 @@ for area in data:
         
         #c2=str[c[1]].replace["u3000",""]
         tank.append(b)
-      tank2.append(name,tank)
+      c=[name,tank]
+      tank2.append(c)
       tank=[]
         
 print(tank2)
