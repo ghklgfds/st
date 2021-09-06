@@ -15,7 +15,7 @@ with open('tenki.json', 'r', encoding="UTF-8") as f:
 # 読み出したデータを解析 --- (*2)
 for area in data:
   name = area['name']
-　st.text("@@@@@@@@@@@@@@@@@@@@@@@")
+  st.text("@@@@@@@@@@@@@@@@@@@@@@@")
   st.text(name)
   for ts in area['srf']['timeSeries']:
     times = [n for n in ts['timeDefines']]
