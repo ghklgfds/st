@@ -20,19 +20,12 @@ for area in data:
   name = area['name']
   
 
-  print("[", name, "]")
+  st.text("[", name, "]")
+  
   for ts in area['srf']['timeSeries']:
     times = [n for n in ts['timeDefines']]
     if 'weathers' in ts['areas']:
       for i,v in enumerate(ts['areas']['weathers']):
-        print(times[i], ":", v)
-        #
-        b=[times[i], ":", v]
-        #
+        st.text(times[i], ":", v)
         
-        #b2=str[b[2]].replace["u3000",""]
-        tank.append(b)
-      c=[name,tank]
-      st.text(c)
-      st.text("¥n")
 
