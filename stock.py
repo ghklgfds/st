@@ -23,4 +23,4 @@ px.line(df, title="sample figure")
 st.write (
 px.line(df2, title="sample figure")
 )
-st.line_chart([df,df2])
+st.line_chart([df[1],df2[1]])
