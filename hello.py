@@ -17,7 +17,7 @@ with open('tenki.json', 'r', encoding="UTF-8") as f:
 for area in data:
   name = area['name']
   print("[", name, "]")
-　#a=("[", name, "]")
+　
   for ts in area['srf']['timeSeries']:
     times = [n for n in ts['timeDefines']]
     if 'weathers' in ts['areas']:
