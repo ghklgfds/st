@@ -27,7 +27,7 @@ for area in data:
         print(times[i], ":", v)
         b=[times[i], ":", v]
         #b2=b.replace["u3000",""]
-        c=[name,b2]
+        c=[name,b]
         tank.append(c)
         
 
