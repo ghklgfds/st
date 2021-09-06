@@ -17,5 +17,5 @@ df2=web.DataReader(code2,"fred",start,end)
 st.text(df.columns)
 #st.write(df)
 st.write(
-    px.line(df,df2, title="sample figure")
+    px.line([df,df2], title="sample figure")
 )
