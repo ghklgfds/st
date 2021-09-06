@@ -23,7 +23,7 @@ px.line(df, title="sample figure")
 st.write (
 px.line(df2, title="sample figure")
 )
-for a,b in zip df[1],df2[1];
+for (a,b) in zip (df[1],df2[1]);
     print(a)
     print(b)
 #st.line_chart([df[1],df2[1]])
