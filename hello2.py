@@ -8,8 +8,8 @@ import plotly.express as px
 
 st.title('Streamlit sp500')
 
-start=dt.date(2021,1,1)
-end=dt.date(2021,3,1)
+start=dt.date(1989,1,1)
+end=dt.date(2021,9,1)
 code="SP500"
 df=web.DataReader(code,"fred",start,end)
 st.text(df.columns)
