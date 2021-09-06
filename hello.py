@@ -30,9 +30,9 @@ for area in data:
         b=[times[i], ":", v]
         #
         
-        b2=str[b[2]].replace["u3000",""]
+        #b2=str[b[2]].replace["u3000",""]
         tank.append(b)
-      c=[name,tank]
+      c=[name,tank,"¥n"]
       tank2.append(c)
       tank=[]
         
