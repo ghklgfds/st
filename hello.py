@@ -25,7 +25,7 @@ for area in data:
     if 'weathers' in ts['areas']:
       for i,v in enumerate(ts['areas']['weathers']):
         print(times[i], ":", v)
-        b=(times[i], ":", v)
+        b=[times[i], ":", v]
         b2=b.replace["u3000",""]
         c=[name,b2]
         tank.append(c)
