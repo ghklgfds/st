@@ -2,7 +2,7 @@ import urllib.request as req
 import json
 import streamlit as st
 
-
+St.title("The weather in Japan")
 # URLや保存ファイル名を指定
 url = 'https://www.jma.go.jp/bosai/forecast/data/forecast/010000.json'
 filename = 'tenki.json'
