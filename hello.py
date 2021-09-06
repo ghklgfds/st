@@ -31,4 +31,4 @@ for area in data:
         tank.append(c)
         
 
-st.title(b2)
+st.title(name)
