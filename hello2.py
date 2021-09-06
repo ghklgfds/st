@@ -13,7 +13,7 @@ end=dt.date(2021,9,1)
 code="SP500"
 df=web.DataReader(code,"fred",start,end)
 st.text(df.columns)
-st.write(df.head(100))
+st.write(df)
 st.write(
     px.line(df, title="sample figure")
 )
