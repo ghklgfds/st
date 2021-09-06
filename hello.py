@@ -14,8 +14,11 @@ req.urlretrieve(url, filename)
 with open('tenki.json', 'r', encoding="UTF-8") as f:
   data = json.load(f)
 # 読み出したデータを解析 --- (*2)
+tank=[]
 for area in data:
   name = area['name']
+  tank.append(name)
+
   print("[", name, "]")
   for ts in area['srf']['timeSeries']:
     times = [n for n in ts['timeDefines']]
@@ -24,4 +27,4 @@ for area in data:
         print(times[i], ":", v)
         b=(times[i], ":", v)
 
-st.title(name)
+st.title(tank)
