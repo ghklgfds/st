@@ -29,8 +29,8 @@ for area in data:
         b=[times[i], ":", v]
         #
         c=[name,b]
-        c2=str[c[1]].replace["u3000",""]
-        tank.append(c2)
+        #c2=str[c[1]].replace["u3000",""]
+        tank.append(c)
         
 
 st.title(tank)
