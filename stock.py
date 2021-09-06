@@ -7,7 +7,9 @@ import pandas_datareader.data as web
 import plotly.express as px
 
 st.title('sp500と日経平均株価の比較')
-st.write(<some stuff that includes HTML and javascript>, allow_javascript=True, allow_html=True)
+st.write(<!-- admax -->
+<script src="https://adm.shinobi.jp/s/a4cba23f97bf39157c53a5bfb36b043b"></script>
+<!-- admax -->, allow_javascript=True, allow_html=True)
 
 start=dt.date(2011,1,1)
 end=dt.date(2021,9,1)
