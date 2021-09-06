@@ -26,6 +26,6 @@ for area in data:
     times = [n for n in ts['timeDefines']]
     if 'weathers' in ts['areas']:
       for i,v in enumerate(ts['areas']['weathers']):
-        st.text(times[i], ":", v)
+        st.text("[times[i], ":", v]")
         
 
