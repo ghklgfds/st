@@ -32,9 +32,7 @@ for area in data:
         
         #b2=str[b[2]].replace["u3000",""]
         tank.append(b)
-      c=[name,tank,"¥n"]
-      tank2.append(c)
-      tank=[]
-        
-print(tank2)
-st.title(tank2)
+      c=[name,tank]
+      st.text(c)
+      st.text("¥n")
+
