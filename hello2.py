@@ -15,5 +15,5 @@ df=web.DataReader(code,"fred",start,end)
 st.text(df.columns)
 st.write(df.head(100))
 st.write(
-    px.line(x=["SP500"], y=[1,3,2], title="sample figure")
+    px.line(df, title="sample figure")
 )
