@@ -35,5 +35,5 @@ for area in data:
       tank2.append(name,tank)
       tank=[]
         
-
+print(tank2)
 st.title(tank2)
