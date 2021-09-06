@@ -26,7 +26,7 @@ for area in data:
       for i,v in enumerate(ts['areas']['weathers']):
         print(times[i], ":", v)
         #
-        b=[times[i], ":", v2]
+        b=[times[i], ":", v]
         #
         c=[name,b]
         c2=str[c[2]].replace["u3000",""]
