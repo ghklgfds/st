@@ -20,7 +20,8 @@ df=pd.DataFrame(tank)
 p=df.columns
 st.text(p)
 df_s = df.sort_values(1)
+st.text('2021年7月時点ワーストランキング')
 st.write(df_s)
-st.text('2021年7月時点')
+
 
 #st.write(df)
