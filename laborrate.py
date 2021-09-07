@@ -15,9 +15,10 @@ for (x,y,z) in zip (a['時点'],a['地域'],a['（季節調整値）有効求人
            
             tank.append(d)
             
-tank2=tank.sorted()            
-df=pd.DataFrame(tank2)
-
+         
+df=pd.DataFrame(tank)
+df_s = df.sort_values('（季節調整値）有効求人倍率【倍】', ascending=true)
+st.write(df_s)
 st.text('2021年7月時点')
 
-st.write(df)
+#st.write(df)
