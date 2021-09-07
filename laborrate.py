@@ -7,6 +7,12 @@ st.text(a.columns)
 for i in a['時点']:
    b=list(i)
    c=list('20217')
-   d=len(set(b&c))
-   if d==5:
+   cnt=0
+   for x in b:
+      for y in c:
+         if x==y:
+            cnt=cnt+1
+   if cnt>3:
       st.text(i)
+      
+   
