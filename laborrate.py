@@ -1,5 +1,12 @@
 import pandas as pd
 import streamlit as st
+fig = plt.figure()
+ax = fig.add_subplot()
+# ランダムな値をヒストグラムとしてプロットする
+x = np.random.normal(loc=.0, scale=1., size=(100,))
+ax.hist(x, bins=20)
+# Matplotlib の Figure を指定して可視化する
+#st.pyplot(fig)
 a=pd.read_csv('TimeSeriesResult_20210907231948299.csv')
 st.title('有効求人倍率統計')
 st.text('全履歴')
