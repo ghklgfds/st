@@ -26,5 +26,9 @@ px.line(df2, title="sample figure")
 
 a=df['SP500']
 b=df2['NIKKEI225']
-df3=pd.DataFrame([a[:9],b[:9]])
+tank=[]
+for (x,y) in zip (a,b):
+    z=(x,y)
+    tank.append(z)
+df3=pd.DataFrame(tank)
 st.line_chart(df3)
