@@ -28,7 +28,8 @@ a=df['SP500']
 b=df2['NIKKEI225']
 tank=[]
 for (x,y) in zip (a,b):
-    z=(x,y)
+    z=(100*x,y)
     tank.append(z)
 df3=pd.DataFrame(tank)
+st.text ("1ドルを100倍して描画")
 st.line_chart(df3)
