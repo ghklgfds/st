@@ -15,7 +15,7 @@ code="SP500"
 code2="NIKKEI225"
 df=web.DataReader(code,"fred",start,end)
 df2=web.DataReader(code2,"fred",start,end)
-st.text(df.columns)
+st.text(df2.columns)
 #st.write(df)
 st.write(
 px.line(df, title="sample figure")
