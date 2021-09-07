@@ -24,7 +24,7 @@ st.write (
 px.line(df2, title="sample figure")
 )
 
-st.text(df['SP500'].head(5))
+st.text(df['SP500'].columns)
 
 for i in df.columns.values:
    st.text(i)
