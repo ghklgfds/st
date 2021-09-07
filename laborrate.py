@@ -13,15 +13,9 @@ for (x,y,z) in zip (a['時点'],a['地域'],a['（季節調整値）有効求人
     if c>-1 and y==y and z==z:
             d=[y,z]
            
-            tank.append(d)
-            
-         
+            tank.append(d)         
 df=pd.DataFrame(tank)
-p=df.columns
-st.text(p)
 df_s = df.sort_values(1)
 st.text('2021年7月時点ワーストランキング')
 st.write(df_s)
-
-
-#st.write(df)
+st.line_chart(df_s)
