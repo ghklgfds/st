@@ -25,6 +25,6 @@ px.line(df2, title="sample figure")
 )
 
 a=df['SP500']
-b=df['NIKKEI225']
+b=df2['NIKKEI225']
 
 st.line_chart([a,b])
