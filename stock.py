@@ -3,14 +3,23 @@ import pandas as pd
 import datetime as dt
 import numpy as np
 import pandas_datareader.data as web
-
 import plotly.express as px
 
-st.title('sp500と日経平均株価の比較')
-#st.write(<script src="https://adm.shinobi.jp/s/a4cba23f97bf39157c53a5bfb36b043b"></script>, allow_javascript=True, allow_html=True)
+today = dt.date.today()
 
-start=dt.date(2011,1,1)
-end=dt.date(2021,9,1)
+year = today.year
+month = today.month
+day = today.day
+
+print(year)  
+print(month)  
+print(day)  
+
+
+st.title('sp500と日経平均株価の比較')
+
+start=dt.date(2018,1,1)
+end=dt.date(year,month,day)
 code="SP500"
 code2="NIKKEI225"
 df=web.DataReader(code,"fred",start,end)
