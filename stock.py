@@ -17,7 +17,7 @@ print(day)
 
 
 st.title('sp500と日経平均株価の比較')
-st.text('情報は'+str(day)+'時点のものです。')
+st.text(str(day))
 start=dt.date(2018,1,1)
 end=dt.date(year,month,day)
 code="SP500"
