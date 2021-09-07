@@ -7,6 +7,6 @@ st.text(a.columns)
 for i in a['時点']:
    c=i.find('2021年7')
    if c>-1:
-      st.text(c)
+      st.text(i)
       
    
