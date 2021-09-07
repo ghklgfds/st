@@ -24,7 +24,7 @@ st.write (
 px.line(df2, title="sample figure")
 )
 
-st.text(len(df['0']))
+st.text(len(df['DATE']))
 
 for i in df.columns.values:
    st.text(i)
