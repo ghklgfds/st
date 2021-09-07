@@ -25,7 +25,7 @@ px.line(df2, title="sample figure")
 )
 p=df.columns.values
 print(p)
-for (a,b) in zip (df[1],df2[1]):
-    print(a)
-    print(b)
+#for (a,b) in zip (df[1],df2[1]):
+    #print(a)
+    #print(b)
 #st.line_chart([df[1],df2[1]])
