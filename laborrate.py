@@ -12,10 +12,12 @@ for (x,y,z) in zip (a['時点'],a['地域'],a['（季節調整値）有効求人
     c=x.find('2021年7月')
     if c>-1:
             d=[x,y,z]
-            
+            e=[y,100*z]
             tank.append(d)
+            tank2.append(e)
             
 df=pd.DataFrame(tank)
+df2=pd.DataFrame(tank2)
 st.text('2021年7月時点')
 st.write(df)
-st.line_chart(df)
+st.line_chart(df2)
