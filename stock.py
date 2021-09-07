@@ -23,6 +23,9 @@ px.line(df, title="sample figure")
 st.write (
 px.line(df2, title="sample figure")
 )
+
+st.text(len(df))
+
 for i in df.columns.values:
    st.text(i)
 #for (a,b) in zip (df[1],df2[1]):
