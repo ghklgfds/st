@@ -6,6 +6,7 @@ st.write(a)
 st.text(a.columns)
 for i in a['時点']:
    c=i.find('2021年7')
-   st.text(c)
+   if c>-1:
+      st.text(c)
       
    
