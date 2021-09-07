@@ -12,7 +12,7 @@ for i in a['時点']:
       for y in c:
          if x==y:
             cnt=cnt+1
-   if cnt>3:
+   if cnt>4:
       st.text(i)
       
    
