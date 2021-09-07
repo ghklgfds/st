@@ -28,7 +28,7 @@ a=df['SP500']
 b=df2['NIKKEI225']
 tank=[]
 for (x,y) in zip (a,b):
-    z=(0.001*x,0.1*y)
+    z=(0.01*x,0.1*y)
     tank.append(z)
 df3=pd.DataFrame(tank)
 st.text ("1ドルを100倍して描画")
