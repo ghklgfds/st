@@ -15,13 +15,13 @@ code="SP500"
 code2="NIKKEI225"
 df=web.DataReader(code,"fred",start,end)
 df2=web.DataReader(code2,"fred",start,end)
-st.text(df2.columns)
+#st.text(df2.columns)
 #st.write(df)
 st.write(
-px.line(df, title="sample figure")
+px.line(df, title="SP500")
 )
 st.write (
-px.line(df2, title="sample figure")
+px.line(df2, title="日経平均株価")
 )
 
 a=df['SP500']
