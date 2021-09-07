@@ -18,4 +18,4 @@ df=pd.DataFrame(tank)
 df_s = df.sort_values(1)
 st.text('2021年7月時点ワーストランキング')
 st.write(df_s)
-st.line_chart(df_s)
+
