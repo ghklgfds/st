@@ -10,7 +10,7 @@ tank=[]
 tank2=[]
 for (x,y,z) in zip (a['時点'],a['地域'],a['（季節調整値）有効求人倍率【倍】']):
     c=x.find('2021年7月')
-    if c>-1 and z==z:
+    if c>-1 and x==x and y==y and z==z:
             d=[x,y,z]
             e=[y,100*z]
             tank.append(d)
