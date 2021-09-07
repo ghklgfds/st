@@ -24,10 +24,7 @@ st.write (
 px.line(df2, title="sample figure")
 )
 
-st.text(df['SP500'][2])
+a=df['SP500']
+b=df['NIKKEI225']
 
-
-#for (a,b) in zip (df[1],df2[1]):
-    #print(a)
-    #print(b)
-#st.line_chart([df[1],df2[1]])
+st.line_chart([a,b])
