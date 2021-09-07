@@ -17,7 +17,7 @@ print(day)
 
 
 st.title('sp500と日経平均株価の比較')
-
+st.text('情報は'+str(year)+'年'+str(month)+'月'+str(day)+'日時点のものです。')
 start=dt.date(2018,1,1)
 end=dt.date(year,month,day)
 code="SP500"
@@ -39,6 +39,7 @@ tank=[]
 for (x,y) in zip (a,b):
     z=(10*x,y)
     tank.append(z)
+st.text(tank[-1])
 df3=pd.DataFrame(tank)
 st.text ("SP500は10倍で描画")
 st.line_chart(df3)
