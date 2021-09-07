@@ -18,4 +18,4 @@ for (x,y,z) in zip (a['時点'],a['地域'],a['（季節調整値）有効求人
 df=pd.DataFrame(tank)
 st.text('2021年7月時点')
 st.write(df)
-st.bar_chart(df)
+st.line_chart(df)
