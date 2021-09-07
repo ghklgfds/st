@@ -12,7 +12,7 @@ for (x,y,z) in zip (a['時点'],a['地域'],a['（季節調整値）有効求人
     c=x.find('2021年7月')
     if c>-1:
             d=[x,y,z]
-            e=[y,z]
+            e=[y,int(z)]
             tank.append(d)
             tank2.append(e)
 df=pd.DataFrame(tank)
