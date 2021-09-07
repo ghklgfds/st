@@ -24,10 +24,9 @@ st.write (
 px.line(df2, title="sample figure")
 )
 
-st.text(df['SP500'].columns)
+st.text(df['SP500'][2])
 
-for i in df.columns.values:
-   st.text(i)
+
 #for (a,b) in zip (df[1],df2[1]):
     #print(a)
     #print(b)
