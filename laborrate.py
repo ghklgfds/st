@@ -5,5 +5,5 @@ st.title('有効求人倍率統計')
 st.write(a)
 st.text(a.columns)
 for i in a['時点']:
-  if i==['2021年7月']:
-    st.text(i)
+   b=set(list(i)&list('2021年7月'))
+   st.text(b)
