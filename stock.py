@@ -40,7 +40,7 @@ for (x,y) in zip (a,b):
     z=(10*x,y)
     tank.append(z)
 [m,n]=(tank[-1])
-st.text=(m/10+'ドル'+y+'円')
+st.text=(str(m/10)+'ドル'+str(n)+'円')
 df3=pd.DataFrame(tank)
 st.text ("SP500は10倍で描画")
 st.line_chart(df3)
