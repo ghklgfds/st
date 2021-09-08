@@ -54,7 +54,7 @@ st.write(
 px.line(dfb, title="ビットコインドル")
 )
 
-code="DEXJPUS"
+codeu="DEXJPUS"
 
 dfu=web.DataReader(codeu,"fred",start,end)
 st.write(
