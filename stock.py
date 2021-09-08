@@ -45,3 +45,11 @@ st.text (tank[-1])
 df3=pd.DataFrame(tank)
 
 st.line_chart(df3)
+
+
+codeb="CBBTCUSD"
+
+dfb=web.DataReader(codeb,"fred",start,end)
+st.write(
+px.line(dfb, title="ビットコインドル")
+)
