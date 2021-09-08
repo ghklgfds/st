@@ -66,4 +66,4 @@ px.line(dfu, title="ドル円")
 cup2=[]
 for h in dfu:
     cup2.append(h)
-st.text(cup2[-1])
+st.text(cup2)
