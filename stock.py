@@ -17,7 +17,7 @@ print(day)
 
 
 st.title('sp500と日経平均株価の比較')
-start=dt.date(2018,1,1)
+start=dt.date(2020,1,1)
 end=dt.date(year,month,day)
 code="SP500"
 code2="NIKKEI225"
