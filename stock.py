@@ -53,11 +53,17 @@ dfb=web.DataReader(codeb,"fred",start,end)
 st.write(
 px.line(dfb, title="ビットコインドル")
 )
-st.text(dfb[-1])
+cup=[]
+for k in dfb:
+    cup.append(k)
+st.text(cup[-1])
 codeu="DEXJPUS"
 
 dfu=web.DataReader(codeu,"fred",start,end)
 st.write(
 px.line(dfu, title="ドル円")
 )
-st.text(dfu[-1])
+cup2=[]
+for h in dfu:
+    cup2.append(h)
+st.text(cup2[-1])
