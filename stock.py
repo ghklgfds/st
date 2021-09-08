@@ -16,7 +16,7 @@ print(month)
 print(day)  
 
 
-st.title('sp500と日経平均株価の比較')
+st.title('S&P500と日経平均株価の比較')
 start=dt.date(2020,1,1)
 end=dt.date(year,month,day)
 code="SP500"
