@@ -54,7 +54,8 @@ st.write(
 px.line(dfb, title="ビットコインドル")
 )
 cup=[]
-for k in dfb:
+c=dfb['CBBTCUSD']
+for k in c:
     cup.append(k)
 st.text(cup[-1])
 codeu="DEXJPUS"
@@ -64,6 +65,7 @@ st.write(
 px.line(dfu, title="ドル円")
 )
 cup2=[]
-for h in dfu:
+d=dfu['DEXJPUS']
+for h in d:
     cup2.append(h)
 st.text(cup2)
