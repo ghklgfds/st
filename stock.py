@@ -68,4 +68,4 @@ cup2=[]
 d=dfu['DEXJPUS']
 for h in d:
     cup2.append(h)
-st.text(cup2)
+st.text(cup2[-1])
