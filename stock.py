@@ -69,4 +69,6 @@ d=dfu['DEXJPUS']
 for h in d:
     cup2.append(h)
 st.text(cup2[-1])
-st.text('これは私の書評ブログです。http://www.a-littlegoodbooks.com/良かったら来てください')
+st.text('これは私の書評ブログです。
+http://www.a-littlegoodbooks.com/
+良かったら来てください')
