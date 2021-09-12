@@ -4,6 +4,7 @@ import requests
 import pandas as pd
 import json
 import streamlit as st
+import time 
 #import streamlit as st
 url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-09-13.json?key=')
 key='lMA29WCIfOF57Gvt5cGi84Ee4RTsI97r'
@@ -57,3 +58,4 @@ for v in tank:
                      st.text(d)
                     
     num=num+1
+time.sleep(5)
