@@ -37,7 +37,7 @@ df=pd.DataFrame(tank)
                     
                     
 num=num+1
-genre = st.radio("What's your favorite movie genre",(tank[6])
+genre = st.radio("What's your favorite movie genre",(tank[6]))
 
 for v in tank:
     cnt=0
