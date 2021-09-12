@@ -2,7 +2,6 @@
 
 import requests
 import pandas as pd
-import bs4
 import json
 import streamlit as st
 url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-09-13.json?key=')
