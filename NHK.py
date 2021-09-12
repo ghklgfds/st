@@ -43,7 +43,7 @@ for v in tank:
         for g in y:
             if f==g:
                 cnt=cnt+1
-                if cnt > len(p)*0.8:
+                if cnt > len(p)*0.9:
                    k=0
                    for d in v:
                       st.text(d)
