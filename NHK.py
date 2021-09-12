@@ -6,7 +6,12 @@ import json
 import streamlit as st
 import time 
 #import streamlit as st
-url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-09-13.json?key=')
+
+day = st.selectbox(
+...     'How ?',
+...     ('13', '14', '15'))
+
+url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-09-'+day+'.json?key=')
 key='lMA29WCIfOF57Gvt5cGi84Ee4RTsI97r'
 a=requests.get(url+key)
 
