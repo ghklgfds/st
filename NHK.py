@@ -36,8 +36,8 @@ df=pd.DataFrame(tank)
 acts=df[6]       
                     
                     
-
-selectact = st.radio("What's your favorite movie genre",(acts))
+st.title('NHKの出演者から番組を探す')
+selectact = st.radio("お好みの出演者から番組情報を入手できます",(acts))
 for v in tank:
     cnt=0
     num=0
