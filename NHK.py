@@ -3,6 +3,7 @@
 import requests
 import pandas as pd
 import json
+import streamlit as st
 #import streamlit as st
 url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-09-13.json?key=')
 key='lMA29WCIfOF57Gvt5cGi84Ee4RTsI97r'
@@ -43,12 +44,12 @@ for v in tank:
             if f==g:
                 cnt=cnt+1
                 if cnt > len(p)*0.8:
-                    yuri=(v)
+                    st.text(v)
                     
                     
                     
                     
     num=num+1
     
-st.text(yuri)
+
 
