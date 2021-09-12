@@ -43,7 +43,7 @@ for v in tank:
     num=0
     p=selectact
     if v[6]==p:
-        ts.text(v)
+        st.text(v)
                     
     num=num+1
 
