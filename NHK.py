@@ -7,9 +7,9 @@ import streamlit as st
 import time 
 #import streamlit as st
 
-day = st.selectbox( 13,14,15)
+day = st.selectbox(13,14,15)
 
-url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-09-'+day+'.json?key=')
+url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-09-'+str(day)+'.json?key=')
 key='lMA29WCIfOF57Gvt5cGi84Ee4RTsI97r'
 a=requests.get(url+key)
 
