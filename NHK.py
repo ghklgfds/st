@@ -38,7 +38,6 @@ acts=df[6]
                     
 
 selectact = st.radio("What's your favorite movie genre",(acts))
-
 for v in tank:
     cnt=0
     num=0
@@ -56,6 +55,7 @@ for v in tank:
                    k=0
                    for d in v:
                      st.text(d)
+                     time.sleep(5)
                     
     num=num+1
-time.sleep(5)
+
