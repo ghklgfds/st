@@ -30,6 +30,15 @@ for i in c:
     tank.append(data)
 #print(tank)
 df=pd.DataFrame(tank)
+
+                          
+                    
+                    
+                    
+                    
+num=num+1
+genre = st.radio("What's your favorite movie genre",(tank[6])
+
 for v in tank:
     cnt=0
     num=0
@@ -47,12 +56,3 @@ for v in tank:
                    k=0
                    for d in v:
                       st.text(d)
-                          
-                    
-                    
-                    
-                    
-num=num+1
-genre = st.radio("What's your favorite movie genre",('Comedy', 'Drama', 'Documentary'))  
-
-
