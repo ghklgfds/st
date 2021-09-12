@@ -9,7 +9,7 @@ import time
 #mon = st.slider('何月?', 1, 12, 9)
 st.title('NHKの出演者から番組を探す')
 day = st.slider('何日?', 1, 31, 15)
-url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-09-'+str(day+1)+'.json?key=')
+url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-09-'+str(day)+'.json?key=')
 key='lMA29WCIfOF57Gvt5cGi84Ee4RTsI97r'
 a=requests.get(url+key)
 
