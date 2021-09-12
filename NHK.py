@@ -52,8 +52,7 @@ for v in tank:
                     
                     
                     
-                    
-    num=num+1
-    
+num=num+1
+genre = st.radio("What's your favorite movie genre",('Comedy', 'Drama', 'Documentary'))  
 
 
