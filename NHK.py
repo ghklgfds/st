@@ -47,7 +47,8 @@ for v in tank:
     p=selectact
     if v[6]==p:
         for u in v:
-           st.text(u)
+           st.write('番組情報')
+           st.write(u)
                     
     num=num+1
 
