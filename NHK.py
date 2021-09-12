@@ -27,11 +27,9 @@ for i in c:
     data=[start,end,area,service,title,subtitle,content,act,genres]
     tank.append(data)
 df=pd.DataFrame(tank)
+st.write(df)
 #df.to_csv('nhk.csv')
     
-#このJSONオブジェクト)は、連想配列（Dict）っぽい感じのようなので
-#JSONでの名前を指定することで情報がとってこれる
-#print(b)
 
 
 
