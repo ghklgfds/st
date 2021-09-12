@@ -41,7 +41,7 @@ acts=df[6]
                     
 
 
-selectact = st.radio("お好みの出演者から番組情報を入手できます",(acts))
+selectact = st.radio("チェックを入れた出演者の番組情報を入手できます",(acts))
 for v in tank:
     cnt=0
     num=0
