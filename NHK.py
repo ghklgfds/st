@@ -44,7 +44,12 @@ for v in tank:
             if f==g:
                 cnt=cnt+1
                 if cnt > len(p)*0.8:
-                    st.text(v[0:1,3,4,5,6])
+                   k=0
+                   for d in v:
+                       if k <7:
+                          st.text(d[k])
+                          k=k+1
+                    
                     
                     
                     
