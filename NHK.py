@@ -46,9 +46,8 @@ for v in tank:
                 if cnt > len(p)*0.8:
                    k=0
                    for d in v:
-                       if k <7:
-                          st.text(d[k])
-                          k=k+1
+                      st.text(d)
+                          
                     
                     
                     
