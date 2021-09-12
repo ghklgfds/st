@@ -36,12 +36,12 @@ acts=df[6]
                     
                     
 
-genre = st.radio("What's your favorite movie genre",(acts))
+selectact = st.radio("What's your favorite movie genre",(acts))
 
 for v in tank:
     cnt=0
     num=0
-    p='有吉'
+    p=selectact
     #print(p)
     y=list(p)
     
