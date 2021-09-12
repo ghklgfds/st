@@ -42,20 +42,8 @@ for v in tank:
     cnt=0
     num=0
     p=selectact
-    #print(p)
-    y=list(p)
-    
-    x=list(v[6])
-    #print([y,q])
-    for f in x:
-        for g in y:
-            if f==g:
-                cnt=cnt+1
-                if cnt > len(p)*0.9:
-                   k=0
-                   for d in v:
-                     st.text(d)
-                     time.sleep(5)
+    if v[6]==p:
+        ts.text(v)
                     
     num=num+1
 
