@@ -6,8 +6,8 @@ import json
 import streamlit as st
 import time 
 #import streamlit as st
-
-day = st.slider('How old are you?', 0, 30, 15)
+#mon = st.slider('何月?', 1, 12, 9)
+day = st.slider('何日?', 1, 31, 15)
 
 url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-09-'+str(day)+'.json?key=')
 key='lMA29WCIfOF57Gvt5cGi84Ee4RTsI97r'
