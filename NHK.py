@@ -33,11 +33,11 @@ df=pd.DataFrame(tank)
 for v in tank:
     cnt=0
     num=0
-    p='ゆりやん'
+    p='ニュース'
     #print(p)
     y=list(p)
     
-    x=list(v[6])
+    x=list(v[3])
     #print([y,q])
     for f in x:
         for g in y:
