@@ -32,12 +32,11 @@ for i in c:
 df=pd.DataFrame(tank)
 
                           
-                    
-                    
+acts=df[6]       
                     
                     
 
-genre = st.radio("What's your favorite movie genre",(tank[6]))
+genre = st.radio("What's your favorite movie genre",(acts))
 
 for v in tank:
     cnt=0
