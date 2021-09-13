@@ -38,18 +38,22 @@ for i in c:
 df=pd.DataFrame(tank)
 
                           
-acts=df[6]       
-                    
+acts=df[6]    
+acttank
+for actdata in acts
+    if actdata==actdata:
+        acttank.append(actdata)
+        
                     
 
 
-selectact = st.sidebar.radio("チェックした出演者の番組情報を入手できます",(acts))
+ selectact= st.sidebar.radio("チェックした出演者の番組情報を入手できます",(acttank))
 for v in tank:
     cnt=0
     num=0
     p=selectact
     st.text(p)
-    if v[6]==p and p==p and len(p)>3 and len(v[6])>3:
+    if v[6]==p :
         st.write('番組情報')
         for u in v:
            
