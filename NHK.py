@@ -26,7 +26,7 @@ key='lMA29WCIfOF57Gvt5cGi84Ee4RTsI97r'
 a=requests.get(url+key)
 mes=(a.text)
 if len(mes)<53:
-   st.text(a)
+   st.text('番組情報がまだありません。')
 else:
  b = a.json()
 #st.text(b)
