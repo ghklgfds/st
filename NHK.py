@@ -36,18 +36,58 @@ for i in c:
     tank.append(data)
 #print(tank)
 df=pd.DataFrame(tank)
-
-                          
+titles=df[3]
 acts=df[5]    
 acttank=[]
 for actdata in acts:
     if actdata!='':
         acttank.append(actdata)
+selectmethod=st.sidebar.selectbox('method',('タイトル検索','出演者検索'))
 
-titles=df[3]
+if selectmethod==['タイトル検索']:
+    stitle(titles)
+elif selectmethod==['出演者検索']:
+    sact(acttank)
 
-selecttitle=st.sidebar.selectbox('タイトルで探します。空欄を選ぶと出演者で探せます',(titles))
-if selecttitle=='':   
+
+
+def stitle(titles):
+    selecttitle=st.sidebar.selectbox('タイトルで探します。空欄を選ぶと出演者で探せます',(titles))
+    for t in tank:
+    cnt=1
+    
+    n=selecttitle
+    
+    if t[3]==n:
+        st.write('番組情報')
+        
+        for l in t:
+           if cnt==1:
+              st.write('開始時間')
+              st.write(l)
+              cnt=cnt+1
+           elif cnt==2:
+              st.write('終了時間')
+              st.write(l) 
+              cnt=cnt+1
+           elif cnt==3:
+              st.write('タイトル')
+              st.write(l)
+              cnt=cnt+1
+           elif cnt==4:
+              st.write('サブタイトル')
+              st.write(l)
+              cnt=cnt+1
+           elif cnt==5:
+              st.write('概要')
+              st.write(l)
+              cnt=cnt+1
+           elif cnt==6:
+              st.write('出演者')
+              st.write(l)
+              cnt=0
+ 
+def sact(
  selectact= st.sidebar.selectbox("チェックした出演者の番組情報を入手できます",(acttank))
  for v in tank:
     cnt=1
@@ -82,37 +122,5 @@ if selecttitle=='':
               st.write('出演者')
               st.write(u)
               cnt=0
-elif selecttitle!='':             
- for t in tank:
-    cnt=1
-    
-    n=selecttitle
-    
-    if t[3]==n:
-        st.write('番組情報')
-        
-        for l in t:
-           if cnt==1:
-              st.write('開始時間')
-              st.write(l)
-              cnt=cnt+1
-           elif cnt==2:
-              st.write('終了時間')
-              st.write(l) 
-              cnt=cnt+1
-           elif cnt==3:
-              st.write('タイトル')
-              st.write(l)
-              cnt=cnt+1
-           elif cnt==4:
-              st.write('サブタイトル')
-              st.write(l)
-              cnt=cnt+1
-           elif cnt==5:
-              st.write('概要')
-              st.write(l)
-              cnt=cnt+1
-           elif cnt==6:
-              st.write('出演者')
-              st.write(l)
-              cnt=0
+
+ 
