@@ -108,8 +108,8 @@ elif len(mes)>53:
  
 #elif selectmethod==['出演者検索']:
 # else:
-  selectact= st.sidebar.radio("出演者で探します",(acttank))
-  for v in tank:
+ selectact= st.sidebar.radio("出演者で探します",(acttank))
+ for v in tank:
       cnt=1
       if selectact!='':
        p=selectact
