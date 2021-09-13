@@ -86,7 +86,7 @@ elif selecttitle!='':
  for t in tank:
     cnt=1
     
-    n=selectitle
+    n=selecttitle
     
     if v[5]==n:
         st.write('番組情報')
