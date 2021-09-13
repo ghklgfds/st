@@ -87,7 +87,7 @@ def stitle(titles,tank):
               st.write(l)
               cnt=0
  
-def sact(acttank,tank)
+def sact(acttank,tank):
  selectact= st.sidebar.selectbox("チェックした出演者の番組情報を入手できます",(acttank))
  for v in tank:
     cnt=1
