@@ -9,7 +9,7 @@ import datetime
 now = datetime.datetime.now()
 if now.month<10:
     month=str(0)+str(now.month)
-else
+else:
     month=str(now.month)
 st.text(now.month)
 #import streamlit as st
