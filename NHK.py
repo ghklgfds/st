@@ -124,9 +124,7 @@ elif len(mes)>53:
  elif st.session_state['value']==[True]:
   selectact=st.sidebar.radio('出演者で探します。',(acttank))
   st.text(selectact)
-  elif st.session_state['value']==[True]:
-    selectact= st.sidebar.radio("出演者で探します",(acttank))
-    for v in tank:
+  for v in tank:
       cnt=1
       if selectact!='':
        p=selectact
