@@ -43,7 +43,7 @@ acts=df[6]
                     
 
 
-selectact = st.sidebar.radiobox("チェックした出演者の番組情報を入手できます",(acts))
+selectact = st.sidebar.radio("チェックした出演者の番組情報を入手できます",(acts))
 for v in tank:
     cnt=0
     num=0
