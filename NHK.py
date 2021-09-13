@@ -84,11 +84,11 @@ elif len(mes)>53:
 
  with st.form(key='my_form'):
     
-    checkbox_input = st.checkbox('Yes or No', key='my_checkbox')
+    checkbox_input = st.checkbox('出演者検索に切り替えますか？', key='my_checkbox')
     submit_button = st.form_submit_button(label='Submit', on_click=form_callback)
 
  st.text(selectmethod)
- if selectmethod==['タイトル検索']:
+ if st.session_state.my_checkbox==[True]:
   selecttitle=st.sidebar.radio('タイトルで探します。',(titles))
   st.text(selecttitle)
 # if selecttitle!='':
