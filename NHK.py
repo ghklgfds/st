@@ -10,6 +10,7 @@ import datetime
 
 
 def stitle(tank,titles):
+    titles.insert(0, '出演者で検索')
     st.write('番組情報')
         #st.text(titles)
     cnt=1
@@ -20,6 +21,8 @@ def stitle(tank,titles):
       cnt=1
     
       n=selecttitle
+      if n==['出演者で検索']:
+        sact(tank,acttank)
       #st.text(n)
       if t[2]==n:
          #st.text(t[2])
@@ -51,7 +54,7 @@ def stitle(tank,titles):
               cnt=0
       
         
-@st.cache
+
 def sact(tank,acttank):
     selectact=st.sidebar.radio('act',acttank)
     for v in tank:
@@ -163,15 +166,15 @@ elif len(mes)>53:
 
  
  
- if  st.session_state==['True']:
+ stitle(tank,titles)
         
-        v=sact(tank,acttank)
+ 
        
 
- else:
+ 
         
         
-        t=stitle(tank,titles)
+        
         
 
 
