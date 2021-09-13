@@ -42,10 +42,10 @@ acttank=[]
 for actdata in acts:
     if actdata!='':
         acttank.append(actdata)
-selectmethod=st.sidebar.selectbox('method',('タイトル検索','出演者検索'))
+#selectmethod=st.sidebar.selectbox('method',('タイトル検索','出演者検索'))
 
-if selectmethod==['タイトル検索']:
-   selecttitle=st.sidebar.radio('タイトルで探します。空欄を選ぶと出演者で探せます',(titles))
+#if selectmethod==['タイトル検索']:
+selecttitle=st.sidebar.radio('タイトルで探します。空欄を選ぶと出演者で探せます',(titles))
    for t in tank:
     cnt=1
     
@@ -80,8 +80,8 @@ if selectmethod==['タイトル検索']:
               st.write(l)
               cnt=0
  
-elif selectmethod==['出演者検索']:
-    selectact= st.sidebar.radio("チェックした出演者の番組情報を入手できます",(acttank))
+#elif selectmethod==['出演者検索']:
+selectact= st.sidebar.radio("チェックした出演者の番組情報を入手できます",(acttank))
     for v in tank:
       cnt=1
       if selectact!='':
