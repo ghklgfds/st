@@ -79,7 +79,7 @@ elif len(mes)>53:
  for actdata in acts:
     if actdata!='':
         acttank.append(actdata)
- selectmethod=st.sidebar.radio('method',('タイトル検索','出演者検索'))
+ #selectmethod=st.sidebar.radio('method',('タイトル検索','出演者検索'))
 
 
  with st.form(key='my_form'):
@@ -87,7 +87,7 @@ elif len(mes)>53:
     checkbox_input = st.checkbox('出演者検索に切り替えますか？', key='my_checkbox')
     submit_button = st.form_submit_button(label='Submit', on_click=form_callback)
 
- st.text(selectmethod)
+ #st.text(selectmethod)
  if st.session_state.my_checkbox!=[True]:
   selecttitle=st.sidebar.radio('タイトルで探します。',(titles))
   st.text(selecttitle)
@@ -126,8 +126,8 @@ elif len(mes)>53:
               st.write(l)
               cnt=0
  else:
-     selectact= st.sidebar.radio("出演者で探します",(acttank))
-     for v in tank:
+    selectact= st.sidebar.radio("出演者で探します",(acttank))
+    for v in tank:
       cnt=1
       if selectact!='':
        p=selectact
