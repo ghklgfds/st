@@ -17,33 +17,8 @@ def stitle(tank,titles):
       n=selecttitle
     
       if t[2]==n:
-        st.write('番組情報')
+        return t[2]
         
-        for l in t:
-           if cnt==1:
-              st.write('開始時間')
-              st.write(l)
-              cnt=cnt+1
-           elif cnt==2:
-              st.write('終了時間')
-              st.write(l) 
-              cnt=cnt+1
-           elif cnt==3:
-              st.write('タイトル')
-              st.write(l)
-              cnt=cnt+1
-           elif cnt==4:
-              st.write('サブタイトル')
-              st.write(l)
-              cnt=cnt+1
-           elif cnt==5:
-              st.write('概要')
-              st.write(l)
-              cnt=cnt+1
-           elif cnt==6:
-              st.write('出演者')
-              st.write(l)
-              cnt=0
 @st.cache
 def sact(tank,acttank):
     selectact=st.sidebar.radio(acttank)
@@ -53,34 +28,8 @@ def sact(tank,acttank):
        p=selectact
     
        if v[5]==p :
-        st.write('番組情報')
+          return v[5]
         
-        for u in v:
-           if cnt==1:
-              st.write('開始時間')
-              st.write(u)
-              cnt=cnt+1
-           elif cnt==2:
-              st.write('終了時間')
-              st.write(u) 
-              cnt=cnt+1
-           elif cnt==3:
-              st.write('タイトル')
-              st.write(u)
-              cnt=cnt+1
-           elif cnt==4:
-              st.write('サブタイトル')
-              st.write(u)
-              cnt=cnt+1
-           elif cnt==5:
-              st.write('概要')
-              st.write(u)
-              cnt=cnt+1
-           elif cnt==6:
-              st.write('出演者')
-              st.write(u)
-              cnt=0
-
 
 
 
@@ -159,9 +108,64 @@ elif len(mes)>53:
  st.session_state['value'] = st.checkbox('出演者検索に切り替えますか？', key='my_checkbox')
  
  if  st.session_state['value']==['True']:
-        sact(tank,acttank)
+        v=sact(tank,acttank)
+        st.write('番組情報')
+        
+        for u in v:
+           if cnt==1:
+              st.write('開始時間')
+              st.write(u)
+              cnt=cnt+1
+           elif cnt==2:
+              st.write('終了時間')
+              st.write(u) 
+              cnt=cnt+1
+           elif cnt==3:
+              st.write('タイトル')
+              st.write(u)
+              cnt=cnt+1
+           elif cnt==4:
+              st.write('サブタイトル')
+              st.write(u)
+              cnt=cnt+1
+           elif cnt==5:
+              st.write('概要')
+              st.write(u)
+              cnt=cnt+1
+           elif cnt==6:
+              st.write('出演者')
+              st.write(u)
+              cnt=0
+
  else:
-        stitle(tank,titles)
+        t=stitle(tank,titles)
+        st.write('番組情報')
+        
+        for l in t:
+           if cnt==1:
+              st.write('開始時間')
+              st.write(l)
+              cnt=cnt+1
+           elif cnt==2:
+              st.write('終了時間')
+              st.write(l) 
+              cnt=cnt+1
+           elif cnt==3:
+              st.write('タイトル')
+              st.write(l)
+              cnt=cnt+1
+           elif cnt==4:
+              st.write('サブタイトル')
+              st.write(l)
+              cnt=cnt+1
+           elif cnt==5:
+              st.write('概要')
+              st.write(l)
+              cnt=cnt+1
+           elif cnt==6:
+              st.write('出演者')
+              st.write(l)
+              cnt=0
 
 
 
