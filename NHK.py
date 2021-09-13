@@ -76,5 +76,5 @@ for v in tank:
               st.write('act')
               st.write(u)
               cnt=0
-         cnt=cnt+1
+          cnt=cnt+1
 
