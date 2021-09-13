@@ -24,10 +24,10 @@ day = st.slider('何日?', now.day, maxday,now.day)
 url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+month+'-'+str(day)+'.json?key=')
 key='lMA29WCIfOF57Gvt5cGi84Ee4RTsI97r'
 a=requests.get(url+key)
-st.text(a)
+st.text(a[-1])
 if a==['<Response [400]>']:
    st.text(a)
-elif  a==[<Response [200]>]:
+elif  a==['<Response [200]>']:
  b = a.json()
 #st.text(b)
  c=(b['list']['g1'])
