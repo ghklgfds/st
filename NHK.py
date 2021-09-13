@@ -11,8 +11,8 @@ import datetime
 
 
 
-if 'key' not in st.session_state:
-    st.session_state['key'] = 'True'
+if 'value' not in st.session_state:
+    st.session_state['value'] = 'True'
 
 
 
@@ -80,11 +80,12 @@ elif len(mes)>53:
  #selectmethod=st.sidebar.radio('method',('タイトル検索','出演者検索'))
 
 
- st.session_state['key'] = st.checkbox('出演者検索に切り替えますか？', key='my_checkbox')
+ st.session_state['value'] = st.checkbox('出演者検索に切り替えますか？', key='my_checkbox')
+ st.text(st.session_state['value'])
     
 
  #st.text(selectmethod)
- if st.session_state['key']!=[True]:
+ if st.session_state['value']!=[True]:
   selecttitle=st.sidebar.radio('タイトルで探します。',(titles))
   st.text(selecttitle)
 # if selecttitle!='':
@@ -125,7 +126,7 @@ elif len(mes)>53:
     
 
 
-elif st.session_state['key']==[True]:
+elif st.session_state['value']==[True]:
     selectact= st.sidebar.radio("出演者で探します",(acttank))
     for v in tank:
       cnt=1
