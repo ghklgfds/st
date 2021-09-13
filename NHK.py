@@ -10,7 +10,7 @@ import datetime
 
 
 def stitle(tank,titles):
-    titles.insert(0, '出演者で検索')
+    #titles.insert(0, '出演者で検索')
     st.write('番組情報')
         #st.text(titles)
     cnt=1
@@ -136,7 +136,7 @@ elif len(mes)>53:
 #st.text(b)
  c=(b['list']['g1'])
 
- tank=[]
+ tank=[,,'出演者で検索',,,]
  for i in c:
     #for m in i:
         #print(m)
