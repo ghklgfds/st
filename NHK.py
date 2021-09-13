@@ -26,9 +26,9 @@ key='lMA29WCIfOF57Gvt5cGi84Ee4RTsI97r'
 a=requests.get(url+key)
 
 b = a.json()
-if b=='':
-    st.text('nodata')
+st.text(b)
 c=(b['list']['g1'])
+
 tank=[]
 for i in c:
     #for m in i:
