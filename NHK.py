@@ -66,7 +66,7 @@ elif len(mes)>53:
  for actdata in acts:
     if actdata!='':
         acttank.append(actdata)
-selectmethod=st.sidebar.radio('method',('タイトル検索','出演者検索'))
+ selectmethod=st.sidebar.radio('method',('タイトル検索','出演者検索'))
 
 #if selectmethod==['タイトル検索']:
  selecttitle=st.sidebar.radio('タイトルで探します。',(titles))
