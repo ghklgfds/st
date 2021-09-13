@@ -94,25 +94,25 @@ elif selecttitle!='':
         for u in v:
            if cnt==1:
               st.write('開始時間')
-              st.write(u)
+              st.write(t)
               cnt=cnt+1
            elif cnt==2:
               st.write('終了時間')
-              st.write(u) 
+              st.write(t) 
               cnt=cnt+1
            elif cnt==3:
               st.write('タイトル')
-              st.write(u)
+              st.write(t)
               cnt=cnt+1
            elif cnt==4:
               st.write('サブタイトル')
-              st.write(u)
+              st.write(t)
               cnt=cnt+1
            elif cnt==5:
               st.write('概要')
-              st.write(u)
+              st.write(t)
               cnt=cnt+1
            elif cnt==6:
               st.write('出演者')
-              st.write(u)
+              st.write(t)
               cnt=0
