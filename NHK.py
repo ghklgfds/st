@@ -46,7 +46,7 @@ for actdata in acts:
 
 #if selectmethod==['タイトル検索']:
 selecttitle=st.sidebar.radio('タイトルで探します。空欄を選ぶと出演者で探せます',(titles))
-   for t in tank:
+for t in tank:
     cnt=1
     
     n=selecttitle
