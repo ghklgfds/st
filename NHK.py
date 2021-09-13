@@ -82,7 +82,7 @@ if selecttitle=='':
               st.write('出演者')
               st.write(u)
               cnt=0
-elif selectact!='':             
+elif selecttitle!='':             
  for t in tank:
     cnt=1
     
