@@ -48,7 +48,7 @@ for v in tank:
     cnt=0
     num=0
     p=selectact
-    if v[6]==p and p==p and p!='':
+    if v[6]==p and p==p and len(p)>3:
         st.write('番組情報')
         for u in v:
            
