@@ -159,7 +159,7 @@ elif len(mes)>53:
  
 
 
-__main__
+
 selectmethod=st.radio('method',('タイトル検索','出演者検索'))
 if selectmethod==['タイトル検索']:
     stitle
