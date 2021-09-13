@@ -13,7 +13,7 @@ key = f.read()
 
 
 f.close()
-st.text (key.columns)
+
 now = datetime.datetime.now()
 if now.month<10:
     month=str(0)+str(now.month)
