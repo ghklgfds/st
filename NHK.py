@@ -103,13 +103,13 @@ elif len(mes)>53:
  for actdata in acts:
     if actdata!='':
         acttank.append(actdata)
- #selectmethod=st.sidebar.radio('method',('タイトル検索','出演者検索'))
+ #selectmethod=st.radio('method',('タイトル検索','出演者検索'))
 
 
  st.session_state['value'] = st.checkbox('出演者検索に切り替えますか？', key='my_checkbox')
  
  if  st.session_state['value']==['True']:
-        selectact=st.sidebar.radio(acttank)
+        selectact=st.radio(acttank)
         v=sact(tank,selectact)
         st.write('番組情報')
         
@@ -143,7 +143,7 @@ elif len(mes)>53:
         
         st.write('番組情報')
         #st.text(titles)
-        selecttitle=st.sidebar.radio(titles)
+        selecttitle=st.radio(titles)
         st.text(selecttitle)
         t=stitle(tank,selecttitle)
         for l in t:
