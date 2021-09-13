@@ -7,7 +7,7 @@ import streamlit as st
 import time 
 import datetime
 
-Key=pd.read_csv('Key.csv')
+key=pd.read_csv('Key.csv')
 
 now = datetime.datetime.now()
 if now.month<10:
