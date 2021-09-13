@@ -88,7 +88,6 @@ elif len(mes)>53:
  if st.session_state['value']!=[True]:
   selecttitle=st.sidebar.radio('タイトルで探します。',(titles))
   st.text(selecttitle)
-# if selecttitle!='':
   for t in tank:
     cnt=1
     
@@ -122,11 +121,10 @@ elif len(mes)>53:
               st.write('出演者')
               st.write(l)
               cnt=0
- 
-    
-
-
-elif st.session_state['value']==[True]:
+ elif st.session_state['value']==[True]:
+  selectact=st.sidebar.radio('出演者で探します。',(acttank))
+  st.text(selectact)
+  elif st.session_state['value']==[True]:
     selectact= st.sidebar.radio("出演者で探します",(acttank))
     for v in tank:
       cnt=1
@@ -161,5 +159,12 @@ elif st.session_state['value']==[True]:
               st.write('出演者')
               st.write(u)
               cnt=0
+# if selecttitle!='':
+  
+ 
+    
+
+
+
 
  
