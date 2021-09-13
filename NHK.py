@@ -38,7 +38,7 @@ for i in c:
 df=pd.DataFrame(tank)
 
                           
-acts=df[6]    
+acts=df[5]    
 acttank=[]
 for actdata in acts:
     if actdata!='':
@@ -53,7 +53,7 @@ for v in tank:
     num=0
     p=selectact
     
-    if v[6]==p :
+    if v[5]==p :
         st.write('番組情報')
         for u in v:
            
