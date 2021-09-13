@@ -22,7 +22,7 @@ def stitle(tank,selecttitle):
         
 @st.cache
 def sact(tank,acttank):
-    selectact=st.sidebar.radio(acttank)
+    
     for v in tank:
       cnt=1
       if selectact!='':
@@ -109,7 +109,8 @@ elif len(mes)>53:
  st.session_state['value'] = st.checkbox('出演者検索に切り替えますか？', key='my_checkbox')
  
  if  st.session_state['value']==['True']:
-        v=sact(tank,acttank)
+        selectact=st.sidebar.radio(acttank)
+        v=sact(tank,selectact)
         st.write('番組情報')
         
         for u in v:
