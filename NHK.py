@@ -84,7 +84,7 @@ elif len(mes)>53:
     
 
  #st.text(selectmethod)
- if st.session_state.my_checkbox!=[True]:
+ if st.session_state['key']!=[True]:
   selecttitle=st.sidebar.radio('タイトルで探します。',(titles))
   st.text(selecttitle)
 # if selecttitle!='':
@@ -125,7 +125,7 @@ elif len(mes)>53:
     
 
 
-elif st.session_state.my_checkbox==[True]:
+elif st.session_state['key']==[True]:
     selectact= st.sidebar.radio("出演者で探します",(acttank))
     for v in tank:
       cnt=1
