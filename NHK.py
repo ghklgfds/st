@@ -106,7 +106,7 @@ elif len(mes)>53:
  #selectmethod=st.radio('method',('タイトル検索','出演者検索'))
 
 
- st.session_state=['True']
+ 
  
  if  st.session_state==['True']:
         selectact=st.sidebar.radio('act',acttank)
