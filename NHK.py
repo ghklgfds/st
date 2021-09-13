@@ -46,7 +46,7 @@ for actdata in acts:
 
 titles=df[3]
 
-selecttitle=st.slidbar.selectbox('select',(titles))
+selecttitle=st.slidebar.selectbox('select',(titles))
     
                     
 
