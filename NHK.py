@@ -12,9 +12,9 @@ import datetime
 def stitle(tank,titles):
     st.write('番組情報')
         #st.text(titles)
-        cnt=1
-        selecttitle=st.sidebar.radio('title',titles)
-        st.text(selecttitle)
+    cnt=1
+    selecttitle=st.sidebar.radio('title',titles)
+    st.text(selecttitle)
     
     for t in tank:
       cnt=1
