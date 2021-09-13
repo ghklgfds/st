@@ -14,6 +14,8 @@ else:
 #st.text(now.month)
 #import streamlit as st
 #mon = st.slider('何月?', 1, 12, 9)
+st.write('私の書評ブログです。ぜひ来てください。')
+st.write('https://www.a-littlegoodbooks.com')
 st.title('NHKの番組を探す')
 if now.day+1>31:
     maxday=now.day+15-31
