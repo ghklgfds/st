@@ -13,7 +13,40 @@ import datetime
 
 def form_callback():
     
-    st.write(st.session_state.my_checkbox)
+    selectact= st.sidebar.radio("出演者で探します",(acttank))
+    for v in tank:
+      cnt=1
+      if selectact!='':
+       p=selectact
+    
+       if v[5]==p :
+        st.write('番組情報')
+        
+        for u in v:
+           if cnt==1:
+              st.write('開始時間')
+              st.write(u)
+              cnt=cnt+1
+           elif cnt==2:
+              st.write('終了時間')
+              st.write(u) 
+              cnt=cnt+1
+           elif cnt==3:
+              st.write('タイトル')
+              st.write(u)
+              cnt=cnt+1
+           elif cnt==4:
+              st.write('サブタイトル')
+              st.write(u)
+              cnt=cnt+1
+           elif cnt==5:
+              st.write('概要')
+              st.write(u)
+              cnt=cnt+1
+           elif cnt==6:
+              st.write('出演者')
+              st.write(u)
+              cnt=0
 
 
 
@@ -125,41 +158,8 @@ elif len(mes)>53:
               st.write('出演者')
               st.write(l)
               cnt=0
- else:
-    selectact= st.sidebar.radio("出演者で探します",(acttank))
-    for v in tank:
-      cnt=1
-      if selectact!='':
-       p=selectact
+ 
     
-       if v[5]==p :
-        st.write('番組情報')
-        
-        for u in v:
-           if cnt==1:
-              st.write('開始時間')
-              st.write(u)
-              cnt=cnt+1
-           elif cnt==2:
-              st.write('終了時間')
-              st.write(u) 
-              cnt=cnt+1
-           elif cnt==3:
-              st.write('タイトル')
-              st.write(u)
-              cnt=cnt+1
-           elif cnt==4:
-              st.write('サブタイトル')
-              st.write(u)
-              cnt=cnt+1
-           elif cnt==5:
-              st.write('概要')
-              st.write(u)
-              cnt=cnt+1
-           elif cnt==6:
-              st.write('出演者')
-              st.write(u)
-              cnt=0
 
 
 
