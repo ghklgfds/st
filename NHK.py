@@ -86,8 +86,10 @@ elif len(mes)>53:
 
  #st.text(selectmethod)
  if st.session_state['value']!=[True]:
+  del st.sidebar.radio
   selecttitle=st.sidebar.radio('タイトルで探します。',(titles))
   st.text(selecttitle)
+   
   for t in tank:
     cnt=1
     
@@ -122,6 +124,7 @@ elif len(mes)>53:
               st.write(l)
               cnt=0
  elif st.session_state['value']==[True]:
+  del st.sidebar.radio
   selectact=st.sidebar.radio('出演者で探します。',(acttank))
   st.text(selectact)
   for v in tank:
