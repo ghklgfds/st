@@ -20,7 +20,7 @@ if now.day+1>31:
 else :
     maxday=now.day+7
 #nowday=now.day
-day = st.slider('何日?', now.day, maxday,now.day)
+day = st.slider('何日?', now.day, maxday+20,now.day)
 url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+month+'-'+str(day)+'.json?key=')
 key='lMA29WCIfOF57Gvt5cGi84Ee4RTsI97r'
 a=requests.get(url+key)
