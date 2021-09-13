@@ -73,7 +73,6 @@ else:
            if cnt==1:
               st.write('開始時間')
               st.write(l)
-              st.write('¥n')
               cnt=cnt+1
            elif cnt==2:
               st.write('終了時間')
