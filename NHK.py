@@ -17,7 +17,7 @@ def stitle(tank,titles):
       n=selecttitle
     
       if t[2]==n:
-        return t[2]
+      return t[2]
         
 @st.cache
 def sact(tank,acttank):
@@ -28,7 +28,7 @@ def sact(tank,acttank):
        p=selectact
     
        if v[5]==p :
-          return v[5]
+       return v[5]
         
 
 
