@@ -71,8 +71,8 @@ elif len(mes)>53:
 #if selectmethod==['タイトル検索']:
  selecttitle=st.sidebar.radio('タイトルで探します。',(titles))
  st.text(selecttitle)
- if selecttitle!='':
-  for t in tank:
+# if selecttitle!='':
+ for t in tank:
     cnt=1
     
     n=selecttitle
@@ -107,9 +107,9 @@ elif len(mes)>53:
               cnt=0
  
 #elif selectmethod==['出演者検索']:
- else:
-   selectact= st.sidebar.radio("出演者で探します",(acttank))
-   for v in tank:
+# else:
+  selectact= st.sidebar.radio("出演者で探します",(acttank))
+  for v in tank:
       cnt=1
       if selectact!='':
        p=selectact
