@@ -45,13 +45,13 @@ for actdata in acts:
 selectmethod=st.sidebar.selectbox('method',('タイトル検索','出演者検索'))
 
 if selectmethod==['タイトル検索']:
-    stitle(titles)
+    stitle(titles,tank)
 elif selectmethod==['出演者検索']:
-    sact(acttank)
+    sact(acttank,tank)
 
 
 
-def stitle(titles):
+def stitle(titles,tank):
    selecttitle=st.sidebar.selectbox('タイトルで探します。空欄を選ぶと出演者で探せます',(titles))
    for t in tank:
     cnt=1
@@ -87,7 +87,7 @@ def stitle(titles):
               st.write(l)
               cnt=0
  
-def sact(
+def sact(acttank,tank)
  selectact= st.sidebar.selectbox("チェックした出演者の番組情報を入手できます",(acttank))
  for v in tank:
     cnt=1
