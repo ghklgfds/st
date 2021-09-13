@@ -82,7 +82,7 @@ for t in tank:
  
 #elif selectmethod==['出演者検索']:
 selectact= st.sidebar.radio("チェックした出演者の番組情報を入手できます",(acttank))
-    for v in tank:
+for v in tank:
       cnt=1
       if selectact!='':
        p=selectact
