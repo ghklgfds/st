@@ -98,7 +98,7 @@ elif len(mes)>53:
 #print(tank)
  df=pd.DataFrame(tank)
  titles=df[2]
- acts=df[5]    s
+ acts=df[5]    
  acttank=[]
  for actdata in acts:
     if actdata!='':
