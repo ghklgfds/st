@@ -88,7 +88,7 @@ elif selecttitle!='':
     
     n=selecttitle
     
-    if v[5]==n:
+    if t[5]==n:
         st.write('番組情報')
         
         for u in v:
