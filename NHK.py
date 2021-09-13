@@ -41,7 +41,7 @@ df=pd.DataFrame(tank)
 acts=df[6]    
 acttank=[]
 for actdata in acts:
-    if actdata==actdata:
+    if actdata!='':
         acttank.append(actdata)
         
                     
