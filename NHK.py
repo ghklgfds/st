@@ -52,7 +52,7 @@ elif selectmethod==['出演者検索']:
 
 
 def stitle(titles,tank):
-   selecttitle=st.sidebar.selectbox('タイトルで探します。空欄を選ぶと出演者で探せます',(titles))
+   selecttitle=st.sidebar.radio('タイトルで探します。空欄を選ぶと出演者で探せます',(titles))
    for t in tank:
     cnt=1
     
@@ -88,7 +88,7 @@ def stitle(titles,tank):
               cnt=0
  
 def sact(acttank,tank):
- selectact= st.sidebar.selectbox("チェックした出演者の番組情報を入手できます",(acttank))
+ selectact= st.sidebar.radio("チェックした出演者の番組情報を入手できます",(acttank))
  for v in tank:
     cnt=1
     if selectact!='':
