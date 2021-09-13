@@ -25,7 +25,7 @@ url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+month+'-'+str(day)+'.json?k
 key='lMA29WCIfOF57Gvt5cGi84Ee4RTsI97r'
 a=requests.get(url+key)
 mes=(a.text)
-if mes==['{"error":{"code":1,"message":"Invalid parameters"}}]:
+if mes==['{"error":{"code":1,"message":"Invalid parameters"}}']:
    st.text(a)
 else:
  b = a.json()
