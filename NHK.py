@@ -52,7 +52,7 @@ for v in tank:
     cnt=0
     num=0
     p=selectact
-    st.text(p)
+    
     if v[6]==p :
         st.write('番組情報')
         for u in v:
