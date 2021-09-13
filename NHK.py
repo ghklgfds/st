@@ -14,7 +14,7 @@ def stitle(tank,titles):
     st.write('番組情報')
         #st.text(titles)
     cnt=1
-    selecttitle=st.sidebar.radio('title',titles)
+    selecttitle=st.sidebar.radio('タイトル',titles)
     st.text(selecttitle)
     
     for t in tank:
@@ -55,7 +55,7 @@ def stitle(tank,titles):
         
 
 def sact(tank,acttank):
-    selectact=st.sidebar.radio('act',acttank)
+    selectact=st.sidebar.radio('出演者',acttank)
     for v in tank:
       cnt=1
       if selectact!='':
@@ -160,7 +160,7 @@ elif len(mes)>53:
 
 
 
-selectmethod=st.radio('method',('タイトル検索','出演者検索'))
+selectmethod=st.radio('検索方法を選んでください',('タイトル検索','出演者検索'))
 #st.text(len(selectmethod))
 if len(selectmethod)==6:
     stitle(tank,titles)
