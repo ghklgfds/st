@@ -88,7 +88,7 @@ elif len(mes)>53:
     submit_button = st.form_submit_button(label='Submit', on_click=form_callback)
 
  st.text(selectmethod)
-if st.session_state.my_checkbox!=[True]:
+ if st.session_state.my_checkbox!=[True]:
   selecttitle=st.sidebar.radio('タイトルで探します。',(titles))
   st.text(selecttitle)
 # if selecttitle!='':
