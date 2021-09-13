@@ -6,6 +6,8 @@ import json
 import streamlit as st
 import time 
 import datetime
+
+key=pd.read_txt('Key.txt')
 now = datetime.datetime.now()
 if now.month<10:
     month=str(0)+str(now.month)
@@ -24,7 +26,6 @@ else :
 #nowday=now.day
 day = st.slider('何日の番組をお探しですか？', now.day, maxday,now.day)
 url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+month+'-'+str(day)+'.json?key=')
-key='lMA29WCIfOF57Gvt5cGi84Ee4RTsI97r'
 a=requests.get(url+key)
 mes=(a.text)
 if len(mes)<53:
