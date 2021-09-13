@@ -143,6 +143,7 @@ elif len(mes)>53:
         
         st.write('番組情報')
         #st.text(titles)
+        cnt=1
         selecttitle=st.radio('title',titles)
         st.text(selecttitle)
         t=stitle(tank,selecttitle)
