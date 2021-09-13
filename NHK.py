@@ -163,7 +163,7 @@ elif len(mes)>53:
 selectmethod=st.radio('method',('タイトル検索','出演者検索'))
 if selectmethod==['タイトル検索']:
     stitle(tank,titles)
-else:
+elif selectmethod==['出演者検索']:
     sact(tank,acttank)
 
  
