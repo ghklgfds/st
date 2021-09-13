@@ -156,14 +156,14 @@ elif len(mes)>53:
  for actdata in acts:
     if actdata!='':
         acttank.append(actdata)
- selectmethod=st.radio('method',('タイトル検索','出演者検索'))
+ 
 
 
- 
- 
- if selectmethod==['タイトル検索']:
+__main__
+selectmethod=st.radio('method',('タイトル検索','出演者検索'))
+if selectmethod==['タイトル検索']:
     stitle
- else:
+else:
     sact
 
  
