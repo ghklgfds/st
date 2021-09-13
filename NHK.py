@@ -60,21 +60,26 @@ for v in tank:
            if cnt==1:
               st.write('開始時間')
               st.write(u)
+              cnt=cnt+1
            elif cnt==2:
               st.write('終了時間')
               st.write(u) 
+              cnt=cnt+1
            elif cnt==3:
               st.write('タイトル')
               st.write(u)
+              cnt=cnt+1
            elif cnt==4:
               st.write('サブタイトル')
               st.write(u)
+              cnt=cnt+1
            elif cnt==5:
               st.write('概要')
               st.write(u)
+              cnt=cnt+1
            elif cnt==6:
               st.write('act')
               st.write(u)
               cnt=0
-        cnt=cnt+1
+        
 
