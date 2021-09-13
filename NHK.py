@@ -52,8 +52,8 @@ elif selectmethod==['出演者検索']:
 
 
 def stitle(titles):
-    selecttitle=st.sidebar.selectbox('タイトルで探します。空欄を選ぶと出演者で探せます',(titles))
-    for t in tank:
+   selecttitle=st.sidebar.selectbox('タイトルで探します。空欄を選ぶと出演者で探せます',(titles))
+   for t in tank:
     cnt=1
     
     n=selecttitle
