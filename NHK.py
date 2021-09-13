@@ -51,10 +51,10 @@ if selecttitle=='':
  selectact= st.sidebar.selectbox("チェックした出演者の番組情報を入手できます",(acttank))
 for v in tank:
     cnt=1
+    if selectact!='':
+       p=selectact
     
-    p=selectact
-    
-    if v[5]==p :
+       if v[5]==p :
         st.write('番組情報')
         
         for u in v:
