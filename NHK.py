@@ -32,7 +32,7 @@ for i in c:
     content=(i['content'])
     act=i['act']
     genres=i['genres']
-    data=[starttime,endtime,area,title,subtitle,content,act]
+    data=[starttime,endtime,title,subtitle,content,act]
     tank.append(data)
 #print(tank)
 df=pd.DataFrame(tank)
