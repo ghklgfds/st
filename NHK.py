@@ -49,15 +49,32 @@ for actdata in acts:
 
 selectact= st.sidebar.radio("チェックした出演者の番組情報を入手できます",(acttank))
 for v in tank:
-    cnt=0
-    num=0
+    cnt=1
+    
     p=selectact
     
     if v[5]==p :
         st.write('番組情報')
+        
         for u in v:
-           
-           st.write(u)
-                    
-    num=num+1
+           if cnt==1:
+              st.write('開始時間')
+              st.write(u)
+           elif cnt==2:
+              st.write('終了時間')
+              st.write(u) 
+           elif cnt==3:
+              st.write('タイトル')
+              st.write(u)
+           elif cnt==4:
+              st.write('サブタイトル')
+              st.write(u)
+           elif cnt==5:
+              st.write('概要')
+              st.write(u)
+           elif cnt==6:
+              st.write('act')
+              st.write(u)
+              cnt=0
+         cnt=cnt+1
 
