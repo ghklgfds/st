@@ -15,7 +15,7 @@ def stitle(tank,titles):
       cnt=1
     
       n=selecttitle
-    
+      st.text(n)
       if t[2]==n:
          st.text(t[2])
          return t[2]
