@@ -38,7 +38,7 @@ def sact(tank,acttank):
 
 
 if 'value' not in st.session_state:
-    st.session_state['value'] = 'True'
+    st.session_state = 'True'
 
 
 
