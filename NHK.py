@@ -56,7 +56,9 @@ for v in tank:
     cnt=1
     
     p=selectact
-    q=selecttitle
+    if selecttitle!='':
+        q=selecttitle
+        p==''
     if v[5]==p or v[5]==q:
         st.write('番組情報')
         
