@@ -9,17 +9,15 @@ import datetime
 
 
 
-def stitle(tank,titles):
-    st.text(titles)
-    selecttitle=st.sidebar.radio(titles)
-    st.text(selecttitle)
+def stitle(tank,selecttitle):
+
     for t in tank:
       cnt=1
     
       n=selecttitle
-      st.text(n)
+      #st.text(n)
       if t[2]==n:
-         st.text(t[2])
+         #st.text(t[2])
          return t[2]
         
 @st.cache
@@ -100,7 +98,7 @@ elif len(mes)>53:
 #print(tank)
  df=pd.DataFrame(tank)
  titles=df[2]
- acts=df[5]    
+ acts=df[5]    s
  acttank=[]
  for actdata in acts:
     if actdata!='':
@@ -141,9 +139,12 @@ elif len(mes)>53:
               cnt=0
 
  else:
-        t=stitle(tank,titles)
-        st.write('番組情報')
         
+        st.write('番組情報')
+        st.text(titles)
+        selecttitle=st.sidebar.radio(titles)
+        st.text(selecttitle)
+        t=stitle(tank,selecttitle)
         for l in t:
            if cnt==1:
               st.write('開始時間')
