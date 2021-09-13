@@ -142,7 +142,7 @@ elif len(mes)>53:
  else:
         
         st.write('番組情報')
-        st.text(titles)
+        #st.text(titles)
         selecttitle=st.sidebar.radio(titles)
         st.text(selecttitle)
         t=stitle(tank,selecttitle)
