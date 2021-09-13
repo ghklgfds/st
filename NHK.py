@@ -109,7 +109,7 @@ elif len(mes)>53:
  st.session_state['value'] = st.checkbox('出演者検索に切り替えますか？', key='my_checkbox')
  
  if  st.session_state['value']==['True']:
-        selectact=st.radio(acttank)
+        selectact=st.radio('act',acttank)
         v=sact(tank,selectact)
         st.write('番組情報')
         
@@ -143,7 +143,7 @@ elif len(mes)>53:
         
         st.write('番組情報')
         #st.text(titles)
-        selecttitle=st.radio(titles)
+        selecttitle=st.radio('title',titles)
         st.text(selecttitle)
         t=stitle(tank,selecttitle)
         for l in t:
