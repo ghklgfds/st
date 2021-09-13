@@ -27,7 +27,7 @@ a=requests.get(url+key)
 st.text(a)
 if a==['<Response [400]>']:
    st.text(a)
-elif  a==['<Response [200]>']:
+elif  a==[<Response [200]>]:
  b = a.json()
 #st.text(b)
  c=(b['list']['g1'])
