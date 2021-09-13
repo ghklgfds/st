@@ -7,6 +7,7 @@ import streamlit as st
 import time 
 import datetime
 now = datetime.datetime.now()
+st.text(now.month)
 #import streamlit as st
 #mon = st.slider('何月?', 1, 12, 9)
 st.title('NHKの番組を探す')
