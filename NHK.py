@@ -43,7 +43,11 @@ acttank=[]
 for actdata in acts:
     if actdata!='':
         acttank.append(actdata)
-        
+
+titles=df[3]
+
+selecttitle=st.slidbar.selectbox('select',(titles))
+    
                     
 
 
