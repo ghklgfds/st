@@ -106,7 +106,7 @@ elif len(mes)>53:
               st.write(l)
               cnt=0
  
-  elif selectmethod==['出演者検索']:
+ elif selectmethod==['出演者検索']:
   
      selectact= st.sidebar.radio("出演者で探します",(acttank))
      for v in tank:
