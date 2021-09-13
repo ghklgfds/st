@@ -21,8 +21,7 @@ def stitle(tank,titles):
       cnt=1
     
       n=selecttitle
-      if n==['出演者で検索']:
-        sact(tank,acttank)
+      
       #st.text(n)
       if t[2]==n:
          #st.text(t[2])
@@ -95,10 +94,6 @@ def sact(tank,acttank):
 
 
 
-if 'value' not in st.session_state:
-    st.session_state = 'True'
-
-
 
 
 
@@ -136,7 +131,7 @@ elif len(mes)>53:
 #st.text(b)
  c=(b['list']['g1'])
 
- tank=[,,'出演者で検索',,,]
+ tank=[]
  for i in c:
     #for m in i:
         #print(m)
@@ -161,13 +156,16 @@ elif len(mes)>53:
  for actdata in acts:
     if actdata!='':
         acttank.append(actdata)
- #selectmethod=st.radio('method',('タイトル検索','出演者検索'))
+ selectmethod=st.radio('method',('タイトル検索','出演者検索'))
 
 
  
  
- stitle(tank,titles)
-        
+ if selectmethod==['タイトル検索']:
+    stitle
+ else:
+    sact
+
  
        
 
