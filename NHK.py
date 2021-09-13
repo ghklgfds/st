@@ -11,6 +11,7 @@ import datetime
 @st.cache
 def stitle(tank,titles):
     selecttitle=st.sidebar.radio(titles)
+    st.text(selecttitle)
     for t in tank:
       cnt=1
     
