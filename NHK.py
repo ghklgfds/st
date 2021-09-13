@@ -118,7 +118,7 @@ elif len(mes)>53:
  with st.form(key='my_form'):
     
     checkbox_input = st.checkbox('出演者検索に切り替えますか？', key='my_checkbox')
-    submit_button = st.form_submit_button(label='Submit', on_click=form_callback(tank,acttank)
+    submit_button = st.form_submit_button(label='Submit', on_click=form_callback(tank,acttank))
 
  #st.text(selectmethod)
  if st.session_state.my_checkbox!=[True]:
