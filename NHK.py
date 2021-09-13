@@ -36,7 +36,7 @@ a=requests.get(url+key)
 mes=(a.text)
 if len(mes)<53:
    st.text('番組情報がまだありません。')
-else:
+elif len(mes)>53:
  b = a.json()
 #st.text(b)
  c=(b['list']['g1'])
