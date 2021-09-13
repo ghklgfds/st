@@ -39,7 +39,7 @@ df=pd.DataFrame(tank)
 
                           
 acts=df[6]    
-acttank
+acttank=[]
 for actdata in acts:
     if actdata==actdata:
         acttank.append(actdata)
