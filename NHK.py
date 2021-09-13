@@ -24,10 +24,10 @@ day = st.slider('何日?', now.day, maxday,now.day)
 url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+month+'-'+str(day)+'.json?key=')
 key='lMA29WCIfOF57Gvt5cGi84Ee4RTsI97r'
 a=requests.get(url+key)
-st.write(a.text)
-if a==['<Response [400]>']:
+mes=(a.text)
+if mes==['{"error":{"code":1,"message":"Invalid parameters"}}]:
    st.text(a)
-elif  a==['<Response [200]>']:
+else:
  b = a.json()
 #st.text(b)
  c=(b['list']['g1'])
