@@ -7,7 +7,7 @@ import streamlit as st
 import time 
 import datetime
 
-key=pd.read_csv('Key.csv')
+key=pd.read_csv('Key.csv',header=None)
 st.text (key.columns)
 now = datetime.datetime.now()
 if now.month<10:
@@ -27,7 +27,7 @@ else :
 #nowday=now.day
 day = st.slider('何日の番組をお探しですか？', now.day, maxday,now.day)
 url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+month+'-'+str(day)+'.json?key=')
-a=requests.get(url+key['0.1']['0'])
+a=requests.get(url+key)
 mes=(a.text)
 if len(mes)<53:
    st.text('番組情報がまだありません。')
