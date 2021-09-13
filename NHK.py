@@ -60,8 +60,7 @@ else:
 #selectmethod=st.sidebar.selectbox('method',('タイトル検索','出演者検索'))
 
 #if selectmethod==['タイトル検索']:
- selecttitle=st.sidebar.radio('タイトルで探します。空欄を選ぶと出演者で探せます
-                              ',(titles))
+ selecttitle=st.sidebar.radio('タイトルで探します。空欄を選ぶと出演者で探せます'+'¥n',(titles))
  for t in tank:
     cnt=1
     
