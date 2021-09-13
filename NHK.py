@@ -8,7 +8,7 @@ import time
 import datetime
 
 
-@st.cache
+
 def stitle(tank,titles):
     st.text(titles)
     selecttitle=st.sidebar.radio(titles)
