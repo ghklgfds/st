@@ -56,8 +56,8 @@ for v in tank:
     cnt=1
     
     p=selectact
-    
-    if v[5]==p :
+    q=selecttitle
+    if v[5]==p or v[5]==q:
         st.write('番組情報')
         
         for u in v:
@@ -85,5 +85,6 @@ for v in tank:
               st.write('出演者')
               st.write(u)
               cnt=0
+                
         
 
