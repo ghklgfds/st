@@ -15,7 +15,12 @@ else:
 #import streamlit as st
 #mon = st.slider('何月?', 1, 12, 9)
 st.title('NHKの番組を探す')
-day = st.slider('何日?', now.day, now.day+20,now.day)
+if now.day+1>31:
+    maxday=now.day+7-31
+else :
+    maxday=now.day+7
+#nowday=now.day
+day = st.slider('何日?', now.day, maxday,now.day)
 url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+month+'-'+str(day)+'.json?key=')
 key='lMA29WCIfOF57Gvt5cGi84Ee4RTsI97r'
 a=requests.get(url+key)
