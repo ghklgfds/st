@@ -46,7 +46,7 @@ for actdata in acts:
 
 titles=df[3]
 
-selecttitle=st.sidebar.selectbox('select',(titles))
+selecttitle=st.sidebar.selectbox('空欄を選ぶと出演者で探せます',(titles))
 if selecttitle=='':   
  selectact= st.sidebar.selectbox("チェックした出演者の番組情報を入手できます",(acttank))
  for v in tank:
