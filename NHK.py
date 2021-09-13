@@ -162,9 +162,9 @@ elif len(mes)>53:
 
 selectmethod=st.radio('method',('タイトル検索','出演者検索'))
 if selectmethod==['タイトル検索']:
-    stitle
+    stitle(tank,titles)
 else:
-    sact
+    sact(tank,acttank)
 
  
        
