@@ -7,7 +7,12 @@ import streamlit as st
 import time 
 import datetime
 
-key=pd.read_csv('Key.csv',header=None)
+f = open('Key.txt', 'r', encoding='UTF-8')
+
+key = f.read()
+
+
+f.close()
 st.text (key.columns)
 now = datetime.datetime.now()
 if now.month<10:
