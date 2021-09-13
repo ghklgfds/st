@@ -17,6 +17,7 @@ def stitle(tank,titles):
       n=selecttitle
     
       if t[2]==n:
+         st.text(t[2])
          return t[2]
         
 @st.cache
