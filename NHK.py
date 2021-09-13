@@ -78,7 +78,7 @@ for v in tank:
               st.write(u)
               cnt=cnt+1
            elif cnt==6:
-              st.write('act')
+              st.write('出演者')
               st.write(u)
               cnt=0
         
