@@ -128,7 +128,7 @@ if len(mes)<53:
    st.text('番組情報がまだありません。')
 elif len(mes)>53:
  b = a.json()
-#st.text(b)
+ st.text(b)
  c=(b['list']['g1'])
 
  tank=[]
