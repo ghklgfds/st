@@ -124,11 +124,12 @@ day = st.slider('何日の番組をお探しですか？', now.day, maxday,now.d
 url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+month+'-'+str(day)+'.json?key=')
 a=requests.get(url+key)
 mes=(a.text)
+st.text(mes)
 if len(mes)<53:
    st.text('番組情報がまだありません。')
 elif len(mes)>53:
  b = a.json()
- st.text(b)
+ #st.text(b)
  c=(b['list']['g1'])
 
  tank=[]
