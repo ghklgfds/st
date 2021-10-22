@@ -169,7 +169,8 @@ if len(selectmethod)==6:
     if tank!=[]:
        stitle(tank,titles)
 elif len(selectmethod)==5:
-    sact(tank,acttank)
+    if tank!=[]:
+       sact(tank,acttank)
 
  
        
