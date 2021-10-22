@@ -96,7 +96,7 @@ def sact(tank,acttank):
 
 
 
-
+tank=[]
 f = open('Key.txt', 'r', encoding='UTF-8')
 
 key = f.read()
@@ -128,7 +128,7 @@ mes=(a.text)
 
 if len(mes)<53:
    st.text('番組情報がまだありません。')
-   tank=[]
+   
 elif len(mes)>53:
  b = a.json()
  #st.text(b)
