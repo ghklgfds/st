@@ -128,7 +128,7 @@ mes=(a.text)
 
 if len(mes)<53:
    st.text('番組情報がまだありません。')
-   break
+   
 elif len(mes)>53:
  b = a.json()
  #st.text(b)
@@ -157,8 +157,8 @@ elif len(mes)>53:
  acts=df[5]    
  acttank=[]
  for actdata in acts:
-    if actdata!='':
-        acttank.append(actdata)
+        if actdata!='':
+           acttank.append(actdata)
  
 
 
