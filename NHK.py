@@ -129,7 +129,7 @@ if int(now.day)<10:
     url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+str(month)+'-0'+str(day)+'.json?key=')
     #st.text(day)
 else:
-    url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+str(month)+'-0'+str(day)+'.json?key=')
+    url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+str(month)+str(day)+'.json?key=')
     #st.text(day)
  
 
