@@ -104,7 +104,7 @@ key = f.read()
 
 f.close()
  nnow = datetime.datetime.now(
-    datetime.timezone(datetime.timedelta(hours=9))
+    datetime.timezone(datetime.timedelta(hours=0))
 )
 now = datetime.datetime.now()
 st.text(nnow)
