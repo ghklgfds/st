@@ -125,10 +125,10 @@ else :
 nowday=now.day
 st.text(nowday)
 if int(now.day)<10:
-    day==str(now.day)
+    day==now.day
     st.text(day)
 else:
-    day==str(now.day)
+    day==now.day
     st.text(day)
  
 day = st.slider('何日の番組をお探しですか？', 1, 31,nowday)
