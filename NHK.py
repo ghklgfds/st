@@ -122,13 +122,15 @@ if now.day+1>31:
     maxday=now.day+15-31
 else :
     maxday=now.day+15
-selectchannel=st.radio('チャンネルを選んでください',('総合','Eテレ','BS1'))
+selectchannel=st.radio('チャンネルを選んでください',('総合','Eテレ','BS1','BSプレミアム'))
 if selectchannel=='総合':
         channel='g1'
 elif  selectchannel=='Eテレ':
         channel='e1'
 elif  selectchannel=='BS1':
         channel='s1'
+elif  selectchannel=='BSプレミアム':
+        channel='s3'
 
  
        
