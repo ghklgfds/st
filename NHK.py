@@ -105,6 +105,7 @@ key = f.read()
 f.close()
 
 now = datetime.datetime.now()
+st.text(now)
 if now.month<10:
     month=str(0)+str(now.month)
 else:
