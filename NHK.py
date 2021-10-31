@@ -204,7 +204,7 @@ if len(selectmethod)==6:
 elif len(selectmethod)==5:
     if tank!=[]:
        sact(tank,acttank)
-st.write('ご意見、お仕事のご依頼などお待ちしてます。メールください。')
+st.write('ご意見、お仕事のご依頼などお待ちしてます。')
 st.write('888cpmf@gmail.com')
 
 
