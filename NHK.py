@@ -122,7 +122,7 @@ if now.day+1>31:
     maxday=now.day+15-31
 else :
     maxday=now.day+15
-channel='g1'
+#channel='g1'
 nowday=now.day
 day = st.slider('何日の番組をお探しですか？', 1, 31,nowday)
 #st.text(nowday)
