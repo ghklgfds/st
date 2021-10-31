@@ -122,7 +122,7 @@ if now.day+1>31:
     maxday=now.day+15-31
 else :
     maxday=now.day+15
-selectchannel=st.radio('チャンネルを選んでください',('総合','Eテレ','BS1','BSプレミアム','ＮＨＫラジオ第1'))
+selectchannel=st.radio('チャンネルを選んでください',('総合','Eテレ','BS1','BSプレミアム','ＮＨＫラジオ第1','ＮＨＫラジオ第2','ＮＨＫＦＭ'))
 if selectchannel=='総合':
         channel='g1'
 elif  selectchannel=='Eテレ':
@@ -131,6 +131,12 @@ elif  selectchannel=='BS1':
         channel='s1'
 elif  selectchannel=='BSプレミアム':
         channel='s3'
+elif  selectchannel=='ＮＨＫラジオ第1':
+        channel='r1'
+elif  selectchannel=='ＮＨＫラジオ第2':
+        channel='r2'
+elif  selectchannel=='ＮＨＫＦＭ':
+        channel='r3'
 elif  selectchannel=='ＮＨＫラジオ第1':
         channel='r1'
 
