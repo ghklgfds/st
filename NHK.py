@@ -186,9 +186,9 @@ elif len(selectmethod)==5:
     if tank!=[]:
        sact(tank,acttank)
 selectchannel=st.radio('チャンネルを選んでください',('総合','Eテレ'))
-　　if len(selectchannel)==2:
+if len(selectchannel)==2:
         channel='g1'
-   if  len(selectchannel)==3:
+if  len(selectchannel)==3:
         channel='g1'
 
  
