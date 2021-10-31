@@ -153,7 +153,7 @@ if len(mes)<166:
 elif len(mes)>166:
  b = a.json()
  #st.text(b)
- c=(b['list']['g1'])
+ c=(b['list'][channel])
 
  tank=[]
  for i in c:
