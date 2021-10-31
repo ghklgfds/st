@@ -125,7 +125,7 @@ else :
 nowday=now.day
 st.text(nowday)
 if int(now.day)<10:
-    day='0'+str(now.day)
+    day=['0'+str(now.day)]
     st.text(day)
 else:
     day=str(now.day)
