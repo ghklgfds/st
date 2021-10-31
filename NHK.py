@@ -125,10 +125,10 @@ else :
 nowday=now.day
 st.text(nowday)
 if int(now.day)<10:
-    day=['0'+str(now.day)]
+    url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+str(month)+'-0'+str(nowday)+'.json?key=')
     st.text(day)
 else:
-    day=str(now.day)
+    url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+str(month)+'-'+str(nowday)+'.json?key=')
     st.text(day)
  
 day = st.slider('何日の番組をお探しですか？', 1, 31,nowday)
