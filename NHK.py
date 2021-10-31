@@ -123,7 +123,7 @@ else :
 day = st.slider('何日の番組をお探しですか？', 1, 31,now.day)
 url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+month+'-'+str(day)+'.json?key=')
 a=requests.get(url+key)
-mes=(a.text)
+mes=(a)
 st.text(mes)
 
 if len(mes)<166:
