@@ -124,7 +124,7 @@ else :
     maxday=now.day+15
 nowday=now.day
 st.text(nowday)
-if nowday<10:
+if int(nowday)<10:
     day==str(nowday)
     st.text(day)
 else:
