@@ -122,6 +122,7 @@ if now.day+1>31:
     maxday=now.day+15-31
 else :
     maxday=now.day+15
+selectchannel=st.radio('チャンネルを選んでください',('総合','Eテレ'))
 if len(selectchannel)==2:
         channel='g1'
 elif  len(selectchannel)==3:
@@ -191,7 +192,7 @@ if len(selectmethod)==6:
 elif len(selectmethod)==5:
     if tank!=[]:
        sact(tank,acttank)
-selectchannel=st.radio('チャンネルを選んでください',('総合','Eテレ'))
+
 
 
  
