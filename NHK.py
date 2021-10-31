@@ -124,7 +124,7 @@ else :
     maxday=now.day+15
 nowday=now.day
 day = st.slider('何日の番組をお探しですか？', 1, 31,nowday)
-st.text(nowday)
+#st.text(nowday)
 if int(day)<10:
     url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+str(month)+'-0'+str(day)+'.json?key=')
     #st.text(day)
@@ -137,7 +137,7 @@ else:
 #url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-11-01.json?key=')
 a=requests.get(url+key)
 mes=(a.text)
-st.text(url)
+#st.text(url)
 
 if len(mes)<166:
    st.text('番組情報がまだありません。')
