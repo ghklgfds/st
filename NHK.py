@@ -133,7 +133,7 @@ url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+str(month)+'-'+nowday+'.jso
 #url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-11-01.json?key=')
 a=requests.get(url+key)
 mes=(a.text)
-#st.text(mes)
+st.text(url)
 
 if len(mes)<166:
    st.text('番組情報がまだありません。')
