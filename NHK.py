@@ -103,9 +103,11 @@ key = f.read()
 
 
 f.close()
-
+ nnow = datetime.datetime.now(
+    datetime.timezone(datetime.timedelta(hours=9))
+)
 now = datetime.datetime.now()
-st.text(now)
+st.text(nnow)
 if now.month<10:
     month=str(0)+str(now.month)
 else:
