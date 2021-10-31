@@ -109,7 +109,7 @@ if now.month<10:
     month=str(0)+str(now.month)
 else:
     month=str(now.month)
-#st.text(now.month)
+st.text(now.month)
 #import streamlit as st
 #mon = st.slider('何月?', 1, 12, 9)
 st.write('私の書評ブログです。ぜひ来てください。')
