@@ -126,7 +126,7 @@ selectchannel=st.radio('チャンネルを選んでください',('総合','Eテ
 if len(selectchannel)==2:
         channel='g1'
 elif  len(selectchannel)==3:
-        channel='g1'
+        channel='e1'
 
  
        
