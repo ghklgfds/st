@@ -122,7 +122,8 @@ else :
 #nowday=now.day
 day = st.slider('何日の番組をお探しですか？', 1, 31,now.day)
 url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+month+'-'+str(day)+'.json?key=')
-a=requests.get(url+key)
+#https://api.nhk.or.jp/v2/pg/list/{area}/{service}/{date}.json?key={apikey}
+a=requests.get(url+{key})
 mes=(a)
 st.text(mes)
 
