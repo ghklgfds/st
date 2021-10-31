@@ -121,8 +121,8 @@ else :
     maxday=now.day+15
 #nowday=now.day
 day = st.slider('何日の番組をお探しですか？', 1, 31,now.day)
-url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+11+'-'+str(day)+'.json?key=')
-#https://api.nhk.or.jp/v2/pg/list/130/g1/2021-11-01.json?key=_ENTER_YOUR_KEY_
+#url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+11+'-'+str(day)+'.json?key=')
+url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-11-01.json?key=')
 a=requests.get(url+key)
 mes=(a.text)
 st.text(mes)
