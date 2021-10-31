@@ -125,8 +125,10 @@ else :
 selectchannel=st.radio('チャンネルを選んでください',('総合','Eテレ','BS1'))
 if selectchannel=='総合':
         channel='g1'
-elif  len(selectchannel)==3:
+elif  selectchannel=='Eテレ':
         channel='e1'
+elif  selectchannel=='BS1':
+        channel='s1'
 
  
        
