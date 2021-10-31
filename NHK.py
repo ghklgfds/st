@@ -112,7 +112,7 @@ if now.month<10:
     month=str(0)+str(now.month)
 else:
     month=str(now.month)
-st.text(now.month)
+#st.text(now.month)
 #import streamlit as st
 #mon = st.slider('何月?', 1, 12, 9)
 st.write('私の書評ブログです。ぜひ来てください。')
@@ -128,7 +128,7 @@ url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-'+str(month)+'-0'+str(day)+'.
 #url=('https://api.nhk.or.jp/v2/pg/list/130/g1/2021-11-01.json?key=')
 a=requests.get(url+key)
 mes=(a.text)
-st.text(mes)
+#st.text(mes)
 
 if len(mes)<166:
    st.text('番組情報がまだありません。')
