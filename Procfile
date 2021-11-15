@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run NHK.py
+web: sh setup.sh && streamlit run stock.py
