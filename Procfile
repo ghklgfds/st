@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run hello2.py
+streamlit run NHK.py
