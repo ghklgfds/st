@@ -1,7 +1,8 @@
 import pandas as pd
 
 while True:
-    nayami = input("あなたが尊敬する人がいるとして、その人はなんて言ってますか？")
+    #nayami = input("あなたが尊敬する人がいるとして、その人はなんて言ってますか？")
+    nayami=st.text_input('First name')
     bnayami=input(nayami+"についてどうすべきですか？")
     print(nayami,bnayami)
     data=[nayami,bnayami]
