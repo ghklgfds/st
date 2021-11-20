@@ -1,4 +1,5 @@
 import pandas as pd
+import streamlit as st
 
 while True:
     #nayami = input("あなたが尊敬する人がいるとして、その人はなんて言ってますか？")
