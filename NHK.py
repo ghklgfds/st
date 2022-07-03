@@ -158,7 +158,7 @@ else:
 a=requests.get(url+key)
 mes=(a.text)
 st.text(url)
-st.text(len(mes))
+st.text(mes)
 if len(mes)<50:
    st.text('番組情報がまだありません。')
    
