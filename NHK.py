@@ -15,14 +15,14 @@ def stitle(tank,titles):
     #st.text(titles)
     cnt=1
     selecttitle=st.sidebar.radio('タイトル',titles)
-    st.text(selecttitle)
+    #st.text(selecttitle)
     
     for t in tank:
       cnt=1
     
       n=selecttitle
       
-      st.text(n)
+      #st.text(n)
       if t[2]==n:
         #st.text(t[2])
         st.write('番組情報')
