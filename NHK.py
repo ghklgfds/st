@@ -144,33 +144,33 @@ elif  selectchannel=='ＮＨＫラジオ第1':
        
 nowday=now.day
 day = st.slider('何日の番組をお探しですか？', 1, 31,nowday)
-#st.text(nowday)
+st.text(nowday)
 if int(day)<10:
     url=('https://api.nhk.or.jp/v2/pg/list/130/'+channel+'/2021-'+str(month)+'-0'+str(day)+'.json?key=')
-    #st.text(day)
+    st.text(day)
 else:
     url=('https://api.nhk.or.jp/v2/pg/list/130/'+channel+'/2021-'+str(month)+'-'+str(day)+'.json?key=')
-    #st.text(day)
+    st.text(day)
  
 
 #url=('https://api.nhk.or.jp/v2/pg/list/130/g1/0000/2021-'+str(month)+'-'+str(day)+'.json?key=')
 #url=('https://api.nhk.or.jp/v2/pg/list/130/g1/0000/2021-11-01.json?key=')
 a=requests.get(url+key)
 mes=(a.text)
-#st.text(url)
+st.text(url)
 
 if len(mes)<166:
    st.text('番組情報がまだありません。')
    
 elif len(mes)>166:
  b = a.json()
- #st.text(b)
+ st.text(b)
  c=(b['list'][channel])
 
  tank=[]
  for i in c:
     #for m in i:
-        #print(m)
+        print(m)
     start=i['start_time']
     starttime=(start[11:16])
     end=i['end_time']
@@ -184,7 +184,7 @@ elif len(mes)>166:
     genres=i['genres']
     data=[starttime,endtime,title,subtitle,content,act]
     tank.append(data)
-#print(tank)
+ print(tank)
  df=pd.DataFrame(tank)
  titles=df[2]
  acts=df[5]    
