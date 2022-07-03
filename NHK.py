@@ -166,13 +166,13 @@ if len(mes)==51:
    
 elif len(mes)!=51:
  b = a.json()
- st.text(b)
+ # st.text(b)
  c=(b['list'][channel])
 
  tank=[]
  for i in c:
-    for m in i:
-        print(m)
+    #for m in i:
+        #print(m)
     start=i['start_time']
     starttime=(start[11:16])
     end=i['end_time']
