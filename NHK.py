@@ -159,10 +159,10 @@ a=requests.get(url+key)
 mes=(a.text)
 st.text(url)
 st.text(len(mes))
-if len(mes)<166:
+if len(mes)<50:
    st.text('番組情報がまだありません。')
    
-elif len(mes)>166:
+elif len(mes)>50:
  b = a.json()
  st.text(b)
  c=(b['list'][channel])
