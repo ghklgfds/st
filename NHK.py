@@ -24,7 +24,7 @@ def stitle(tank,titles):
       
       st.text(n)
       if t[2]==n:
-         st.text(t[2])
+        st.text(t[2])
         st.write('番組情報')
         for l in t:
            if cnt==1:
