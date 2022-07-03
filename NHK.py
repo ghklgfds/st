@@ -12,7 +12,7 @@ import datetime
 def stitle(tank,titles):
     #titles.insert(0, '出演者で検索')
     st.write('番組情報')
-        #st.text(titles)
+        st.text(titles)
     cnt=1
     selecttitle=st.sidebar.radio('タイトル',titles)
     st.text(selecttitle)
@@ -22,9 +22,9 @@ def stitle(tank,titles):
     
       n=selecttitle
       
-      #st.text(n)
+      st.text(n)
       if t[2]==n:
-         #st.text(t[2])
+         st.text(t[2])
         st.write('番組情報')
         for l in t:
            if cnt==1:
@@ -197,7 +197,7 @@ elif len(mes)>166:
 
 
 selectmethod=st.radio('検索方法を選んでください',('タイトル検索','出演者検索'))
-#st.text(len(selectmethod))
+st.text(len(selectmethod))
 if len(selectmethod)==6:
     if tank!=[]:
        stitle(tank,titles)
