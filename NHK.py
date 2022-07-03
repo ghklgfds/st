@@ -24,7 +24,7 @@ def stitle(tank,titles):
       
       st.text(n)
       if t[2]==n:
-        st.text(t[2])
+        #st.text(t[2])
         st.write('番組情報')
         for l in t:
            if cnt==1:
@@ -164,7 +164,7 @@ if len(mes)==51:
    
 elif len(mes)!=51:
  b = a.json()
- st.text(b)
+ #st.text(b)
  c=(b['list'][channel])
 
  tank=[]
@@ -197,7 +197,7 @@ elif len(mes)!=51:
 
 
 selectmethod=st.radio('検索方法を選んでください',('タイトル検索','出演者検索'))
-st.text(len(selectmethod))
+#st.text(len(selectmethod))
 if len(selectmethod)==6:
     if tank!=[]:
        stitle(tank,titles)
