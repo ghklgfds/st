@@ -12,7 +12,7 @@ import datetime
 def stitle(tank,titles):
     #titles.insert(0, '出演者で検索')
     st.write('番組情報')
-        st.text(titles)
+    st.text(titles)
     cnt=1
     selecttitle=st.sidebar.radio('タイトル',titles)
     st.text(selecttitle)
