@@ -143,7 +143,7 @@ elif  selectchannel=='ＮＨＫラジオ第1':
  
        
 nowday=now.day
-day = st.slider('何日の番組をお探しですか？', 1, 31,nowday)
+day = st.slider("", 1, 31,nowday)
 #st.text(nowday)
 if int(day)<10:
     url=('https://api.nhk.or.jp/v2/pg/list/130/'+channel+'/2022-'+str(month)+'-0'+str(day)+'.json?key=')
@@ -196,7 +196,7 @@ elif len(mes)!=51:
 
 
 
-selectmethod=st.radio('検索方法を選んでください',('タイトル検索','出演者検索'))
+selectmethod=st.radio('',('タイトル検索','出演者検索'))
 #st.text(len(selectmethod))
 if len(selectmethod)==6:
     if tank!=[]:
@@ -204,10 +204,9 @@ if len(selectmethod)==6:
 elif len(selectmethod)==5:
     if tank!=[]:
        sact(tank,acttank)
-st.write("""┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[PR]━┓
+st.write("""
 Amazonのゲームジャンルランキングです。
-　　https://amzn.to/3yC8nJv
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛""")
+　　https://amzn.to/3yC8nJv""")
 
 
 
