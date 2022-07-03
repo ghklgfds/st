@@ -147,10 +147,12 @@ day = st.slider("", 1, 31,nowday)
 #st.text(nowday)
 if int(day)<10:
     url=('https://api.nhk.or.jp/v2/pg/list/130/'+channel+'/2022-'+str(month)+'-0'+str(day)+'.json?key=')
-    st.text(day+'日の番組')
+    st.text(day)
+    st.write('日の番組')
 else:
     url=('https://api.nhk.or.jp/v2/pg/list/130/'+channel+'/2022-'+str(month)+'-'+str(day)+'.json?key=')
-    st.text(day+'日の番組')
+    st.text(day)
+    st.write('日の番組')
  
 
 #url=('https://api.nhk.or.jp/v2/pg/list/130/g1/0000/2021-'+str(month)+'-'+str(day)+'.json?key=')
