@@ -12,7 +12,7 @@ import datetime
 def stitle(tank,titles):
     #titles.insert(0, '出演者で検索')
     st.write('番組情報')
-    st.text(titles)
+    #st.text(titles)
     cnt=1
     selecttitle=st.sidebar.radio('タイトル',titles)
     st.text(selecttitle)
@@ -107,12 +107,12 @@ now = datetime.datetime.now(
     datetime.timezone(datetime.timedelta(hours=9))
 )
 #now = datetime.datetime.now()
-st.text(now)
+#st.text(now)
 if now.month<10:
     month=str(0)+str(now.month)
 else:
     month=str(now.month)
-st.text(now.month)
+#st.text(now.month)
 #import streamlit as st
 #mon = st.slider('何月?', 1, 12, 9)
 st.write('私の書評ブログです。ぜひ来てください。')
@@ -144,7 +144,7 @@ elif  selectchannel=='ＮＨＫラジオ第1':
        
 nowday=now.day
 day = st.slider('何日の番組をお探しですか？', 1, 31,nowday)
-st.text(nowday)
+#st.text(nowday)
 if int(day)<10:
     url=('https://api.nhk.or.jp/v2/pg/list/130/'+channel+'/2022-'+str(month)+'-0'+str(day)+'.json?key=')
     st.text(day)
@@ -157,8 +157,8 @@ else:
 #url=('https://api.nhk.or.jp/v2/pg/list/130/g1/0000/2021-11-01.json?key=')
 a=requests.get(url+key)
 mes=(a.text)
-st.text(url)
-st.text(len(mes))
+#st.text(url)
+#st.text(len(mes))
 if len(mes)==51:
    st.text('番組情報がまだありません。')
    
