@@ -49,4 +49,4 @@ df['release_date'] = [sp.track(track_id)['album']['release_date'] for track_id i
 df = df[['name', 'popularity', 'release_date', 'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo', 'time_signature']]
 
 # データフレームを表示
-df
+st.dataframe(df)
