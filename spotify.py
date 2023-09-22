@@ -13,6 +13,11 @@ sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 #から邦楽のトラックを取得する処理を追加する
 
+st.write("楽曲情報をspotifyから取得する")
+s.write("指定したアーティストの楽曲データを取得できます。その曲のテンポ、キー、曲調もデータとして取得できます。")
+
+
+
 artist_name=st.text_input("アーティスト名を入力してください。")
 
 
