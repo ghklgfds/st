@@ -13,7 +13,7 @@ sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 #から邦楽のトラックを取得する処理を追加する
 
-btn=button(label="submit")
+btn=st.form_submit_button(label="submit")
 
 with st.form("my_form",clear_on_submit=False):
     artist_name=st.text_input("アーティストの名前を入力してください。")
