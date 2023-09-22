@@ -115,7 +115,6 @@ else:
 #st.text(now.month)
 #import streamlit as st
 #mon = st.slider('何月?', 1, 12, 9)
-st.write('Amazonのファッションジャンルページです。')
 st.write('https://amzn.to/3mlUnQt')
 st.title('NHKの番組を探す')
 if now.day+1>31:
@@ -207,13 +206,7 @@ elif len(selectmethod)==6:
     if tank!=[]:
        sact(tank,acttank)
 st.write("""
-Amazonのゲームジャンルランキングです。
-　　https://amzn.to/3kJSDjR""")
-
-
-
- 
-        
+       
         
         
         
