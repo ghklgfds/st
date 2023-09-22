@@ -28,7 +28,7 @@ results = sp.search(q='artist:' + artist_name, type='artist')
 artist_id = results['artists']['items'][0]['id']
 #artist_id="5FLbE1s9bnHwJhmngtVXpD"
 print (artist_id)
-all_tracks = sp.artist_albums(artist_id=artist_id, album_type='album', country='JP', limit=20)
+all_tracks = sp.artist_albums(artist_id=artist_id, album_type='album', country='JP', limit=3)
 print (all_tracks)
 # トラックのIDをリストに格納
 track_ids = []
