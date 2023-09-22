@@ -2,3 +2,4 @@
 pandas_datareader
 plotly
 streamlit
+spotipy
