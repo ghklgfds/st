@@ -1,6 +1,7 @@
 import pandas as pd
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
+import streamlit as st
 
 # Spotify APIのクライアントIDとクライアントシークレットを指定
 client_id = 'e039088e0ef7444faf5ec7e5a7f01ee1'
@@ -12,8 +13,15 @@ sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 #から邦楽のトラックを取得する処理を追加する
 
+
+with st.form("my_form"clear_on_submit=False):
+    artist_name=st.text_input("アーティストの名前を入力してください。")
+    
+
+
+
 # 検索するアーティスト名を指定
-artist_name = 'Michael Jackson'
+#artist_name = 'Michael Jackson'
 
 # アーティストを検索
 results = sp.search(q='artist:' + artist_name, type='artist')
