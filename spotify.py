@@ -24,7 +24,7 @@ artist_name=st.text_input("アーティスト名を入力してください。")
 
 
 # 検索するアーティスト名を指定
-#artist_name = 'Michael Jackson'
+artist_name = 'weekend'
 
 # アーティストを検索
 results = sp.search(q='artist:' + artist_name, type='artist')
