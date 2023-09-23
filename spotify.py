@@ -38,30 +38,30 @@ print (all_tracks)
 df2=pd.DataFrame(all_tracks)
 st.dataframe(df2)
 # トラックのIDをリストに格納
-track_ids = []
-for album in all_tracks['items']:
-    album_tracks = sp.album_tracks(album['id'])
-    for track in album_tracks['items']:
-        track_ids.append(track['id'])
+#track_ids = []
+#for album in all_tracks['items']:
+#    album_tracks = sp.album_tracks(album['id'])
+#    for track in album_tracks['items']:
+#        track_ids.append(track['id'])
 
 # トラックを複数のグループに分けてAPIリクエストを行い、audio featuresを取得
-audio_features = []
-for i in range(0, len(track_ids), 100):
-    audio_features.extend(sp.audio_features(track_ids[i:i+100]))
+#audio_features = []
+#for i in range(0, len(track_ids), 100):
+#    audio_features.extend(sp.audio_features(track_ids[i:i+100]))
 
 # データフレームにまとめる
-df = pd.DataFrame(audio_features)
+#df = pd.DataFrame(audio_features)
 
-df['name'] = [sp.track(track_id)['name'] for track_id in track_ids]
-df['popularity'] = [sp.track(track_id)['popularity'] for track_id in track_ids]
-df['release_date'] = [sp.track(track_id)['album']['release_date'] for track_id in track_ids]
+#df['name'] = [sp.track(track_id)['name'] for track_id in track_ids]
+#df['popularity'] = [sp.track(track_id)['popularity'] for track_id in track_ids]
+#df['release_date'] = [sp.track(track_id)['album']['release_date'] for track_id in track_ids]
 
 # 不要な列を削除
 #df.drop(['type', 'id', 'uri', 'track_href', 'analysis_url'], axis=1, inplace=True)
 # 列の順番を調整
-df = df[['name', 'popularity', 'release_date', 'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo', 'time_signature']]
+#df = df[['name', 'popularity', 'release_date', 'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo', 'time_signature']]
 #if len(df[0])<2:
    # st.write("入力したデータが誤っているか、存在しません。邦楽アーティストの場合はローマ字だと出力できる場合があります。")
     
 # データフレームを表示
-st.dataframe(df)
+#st.dataframe(df)
