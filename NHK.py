@@ -205,7 +205,7 @@ if len(selectmethod)==7:
 elif len(selectmethod)==6:
     if tank!=[]:
        sact(tank,acttank)
-st.write("""
+
        
         
         
