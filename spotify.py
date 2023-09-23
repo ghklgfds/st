@@ -58,7 +58,7 @@ df['release_date'] = [sp.track(track_id)['album']['release_date'] for track_id i
 #df.drop(['type', 'id', 'uri', 'track_href', 'analysis_url'], axis=1, inplace=True)
 # 列の順番を調整
 df = df[['name', 'popularity', 'release_date', 'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo', 'time_signature']]
-if df=[]:
+if df==[]:
     st.write("入力したデータが誤っているか、存在しません。邦楽アーティストの場合はローマ字だと出力できる場合があります。")
     
 # データフレームを表示
