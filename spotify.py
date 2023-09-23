@@ -35,6 +35,8 @@ artist_id = results['artists']['items'][0]['id']
 print (artist_id)
 all_tracks = sp.artist_albums(artist_id=artist_id, album_type='album', country='JP', limit=1)
 print (all_tracks)
+df2=pd.DataFrame(all_tracks)
+st.dataframe(df2)
 # トラックのIDをリストに格納
 track_ids = []
 for album in all_tracks['items']:
