@@ -39,15 +39,10 @@ def yosou(symbol,predicttime):
 
 # 予測結果の出力
   print(symbol,predicted_price)
-  tank=[]
-  for t in data["Close"]:
-    tank.append(t)
-  gap=(predicted_price-tank[-1])
-  return gap
 
 def main():
     predicttime = 3
-    symbols = ["EURUSD=X", "GBPJPY=X", "AUDJPY=X", "EURJPY=X", "GBPUSD=X", "USDJPY=X"]
+    symbols = ["USDJPY=X"]
     
     if st.button("予測を実行"):
         tank2 = []
