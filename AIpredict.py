@@ -44,7 +44,7 @@ def main():
     predicttime = 1
     symbols = ["USDJPY=X"]
     
-    if st.button("予測を実行"):
+    if st.button("ドル円の1時間後の予測を実行"):
         tank2 = []
         for i in symbols:
             result = yosou(i, predicttime)
