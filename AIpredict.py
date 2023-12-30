@@ -48,10 +48,11 @@ def main():
         tank2 = []
         for i in symbols:
             result = yosou(i, predicttime)
-            tank2.append([i, result])
-        st.write(tank2)
+            tank2.append(result)
+        
+        # 予測結果をデータフレームに変換してテーブルとして表示
+        df = pd.DataFrame(tank2, columns=["Symbol", "Predicted Price"])
+        st.write(df)
 
 if __name__ == "__main__":
     main()
-
-
