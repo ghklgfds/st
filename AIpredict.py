@@ -43,12 +43,14 @@ def yosou(symbol,predicttime):
     tank.append(t)
   gap=(predicted_price-tank[-1])
   return gap
-predicttime=3
-symbols=["EURUSD=X","GBPJPY=X","AUDJPY=X","EURJPY=X","GBPUSD=X","USDJPY=X"]
-tank2=[]
-for i in symbols:
-  result=yosou(i,predicttime)
+
+def main:
+  predicttime=3
+  symbols=["EURUSD=X","GBPJPY=X","AUDJPY=X","EURJPY=X","GBPUSD=X","USDJPY=X"]
+  tank2=[]
+  for i in symbols:
+    result=yosou(i,predicttime)
   tank2.append([i,result])
-print(tank2)
+  print(tank2)
 
 
