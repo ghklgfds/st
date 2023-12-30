@@ -42,10 +42,10 @@ def yosou(symbol,predicttime):
   price=(predicted_price)
   st.text(price)
 def main():
-    predicttime = 10
-    symbols = ["USDJPY=X"]
+    predicttime = 60
+    symbols = ["BTC-USD"]
     
-    if st.button("ドル円の10分後の予測を実行"):
+    if st.button("ビットコインの1時間後の予測を実行"):
         tank2 = []
         for i in symbols:
             result = yosou(i, predicttime)
