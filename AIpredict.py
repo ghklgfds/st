@@ -39,7 +39,7 @@ def yosou(symbol,predicttime):
   predicted_price = forecast['yhat'].iloc[-1] * original_max
 
 # 予測結果の出力
-  price=(symbol,predicted_price)
+  price=(predicted_price)
   st.text(price)
 def main():
     predicttime = 10
