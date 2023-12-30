@@ -44,13 +44,6 @@ def yosou(symbol,predicttime):
     tank.append(t)
   gap=(predicted_price-tank[-1])
   return gap
-import streamlit as st
-import yfinance as yf
-from prophet import Prophet
-import pandas as pd
-
-def yosou(symbol, predicttime):
-    # yosou関数の内容はそのまま使います
 
 def main():
     predicttime = 3
