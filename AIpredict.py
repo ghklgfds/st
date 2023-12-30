@@ -1,3 +1,4 @@
+import streamlit as st
 from prophet import Prophet
 import yfinance as yf
 import pandas as pd
@@ -43,14 +44,26 @@ def yosou(symbol,predicttime):
     tank.append(t)
   gap=(predicted_price-tank[-1])
   return gap
+import streamlit as st
+import yfinance as yf
+from prophet import Prophet
+import pandas as pd
 
-def main:
-  predicttime=3
-  symbols=["EURUSD=X","GBPJPY=X","AUDJPY=X","EURJPY=X","GBPUSD=X","USDJPY=X"]
-  tank2=[]
-  for i in symbols:
-    result=yosou(i,predicttime)
-  tank2.append([i,result])
-  print(tank2)
+def yosou(symbol, predicttime):
+    # yosou関数の内容はそのまま使います
+
+def main():
+    predicttime = 3
+    symbols = ["EURUSD=X", "GBPJPY=X", "AUDJPY=X", "EURJPY=X", "GBPUSD=X", "USDJPY=X"]
+    
+    if st.button("予測を実行"):
+        tank2 = []
+        for i in symbols:
+            result = yosou(i, predicttime)
+            tank2.append([i, result])
+        st.write(tank2)
+
+if __name__ == "__main__":
+    main()
 
 
