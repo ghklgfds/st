@@ -5,4 +5,4 @@ streamlit
 pandas>=1.3.3
 lxml==4.6
 prophet
-yhinance
+yfinance
