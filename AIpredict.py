@@ -6,7 +6,7 @@ import pandas as pd
 
 def yosou(symbol,predicttime):
   # データの取得
-  data = yf.download(symbol, period="1mo", interval="1h")
+  data = yf.download(symbol, period="7d", interval="1m")
   data = data.reset_index()
 
   # タイムゾーンの除去
@@ -27,7 +27,7 @@ def yosou(symbol,predicttime):
   model.fit(train_data[['ds', 'y']])
 
 # 予測用のデータフレームを作成
-  future = model.make_future_dataframe(periods=predicttime, freq='4')  # 1時間後の予測を60分後に設定
+  future = model.make_future_dataframe(periods=predicttime, freq='60')  # 1時間後の予測を60分後に設定
 
 # 予測
   forecast = model.predict(future)
@@ -42,10 +42,10 @@ def yosou(symbol,predicttime):
   price=(symbol,predicted_price)
   st.text(price)
 def main():
-    predicttime = 1
+    predicttime = 10
     symbols = ["USDJPY=X"]
     
-    if st.button("ドル円の1時間後の予測を実行"):
+    if st.button("ドル円の10分後の予測を実行"):
         tank2 = []
         for i in symbols:
             result = yosou(i, predicttime)
