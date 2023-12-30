@@ -27,7 +27,7 @@ def yosou(symbol,predicttime):
   model.fit(train_data[['ds', 'y']])
 
 # 予測用のデータフレームを作成
-  future = model.make_future_dataframe(periods=predicttime, freq='60')  # 1時間後の予測を60分後に設定
+  future = model.make_future_dataframe(periods=predicttime, freq='T')  # 1時間後の予測を60分後に設定
 
 # 予測
   forecast = model.predict(future)
