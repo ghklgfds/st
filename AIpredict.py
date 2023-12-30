@@ -3,6 +3,7 @@ from prophet import Prophet
 import yfinance as yf
 import pandas as pd
 
+
 def yosou(symbol,predicttime):
   # データの取得
   data = yf.download(symbol, period="1y", interval="1h")
