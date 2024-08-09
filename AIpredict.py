@@ -1,5 +1,5 @@
 import streamlit as st
-from prophet import Prophet
+from fbprophet import Prophet
 import yfinance as yf
 import pandas as pd
 
