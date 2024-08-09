@@ -6,3 +6,4 @@ lxml==4.9.4
 prophet
 yfinance
 numpy==1.21
+fbprophet
