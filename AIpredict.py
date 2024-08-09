@@ -5,7 +5,8 @@ import pandas as pd
 
 def yosou(symbol, predicttime):
     # データの取得
-    data = yf.download(symbol, period="7d", interval="1m")
+    #data = yf.download(symbol, period="7d", interval="1m")
+    data = yf.download(symbol, period="7d", interval="1m", progress=False)
     data = data.reset_index()
 
     # タイムゾーンの除去
