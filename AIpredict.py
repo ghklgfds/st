@@ -10,15 +10,14 @@ def yosou(symbol, predicttime):
 
     # タイムゾーンの除去と列名の確認
     if 'Datetime' in data.columns:
-        data['Datetime'] = data['Datetime'].dt.tz_localize(None)
+        data['ds'] = data['Datetime'].dt.tz_localize(None)
     elif 'Date' in data.columns:
-        data['Datetime'] = data['Date'].dt.tz_localize(None)
+        data['ds'] = data['Date'].dt.tz_localize(None)
     else:
-        print("Datetime列が見つかりません")
+        st.error("Datetime列が見つかりません")
         return None  # エラー時にNoneを返す
 
     # データの正規化
-    data['ds'] = data['Datetime']  # Prophetが要求する日付列の追加
     data['y'] = data['Close'] / data['Close'].max()  # 予測対象の列の追加
 
     # モデルの定義
