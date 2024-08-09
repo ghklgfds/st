@@ -5,12 +5,17 @@ import pandas as pd
 
 def yosou(symbol, predicttime):
     # データの取得
-    #data = yf.download(symbol, period="7d", interval="1m")
     data = yf.download(symbol, period="7d", interval="1m", progress=False)
     data = data.reset_index()
 
-    # タイムゾーンの除去
-    data['Datetime'] = data['Datetime'].dt.tz_localize(None)  # タイムゾーンを除去
+    # タイムゾーンの除去と列名の確認
+    if 'Datetime' in data.columns:
+        data['Datetime'] = data['Datetime'].dt.tz_localize(None)
+    elif 'Date' in data.columns:
+        data['Datetime'] = data['Date'].dt.tz_localize(None)
+    else:
+        print("Datetime列が見つかりません")
+        return None  # エラー時にNoneを返す
 
     # データの正規化
     data['ds'] = data['Datetime']  # Prophetが要求する日付列の追加
@@ -43,7 +48,10 @@ def main():
     if st.button("ビットコインの1時間後の予測を実行"):
         for symbol in symbols:
             result = yosou(symbol, predicttime)
-            st.write(f"{symbol}の1時間後の予測価格は: {result} USD")
+            if result is not None:
+                st.write(f"{symbol}の1時間後の予測価格は: {result} USD")
+            else:
+                st.write(f"{symbol}の予測に失敗しました。")
 
 if __name__ == "__main__":
     main()
