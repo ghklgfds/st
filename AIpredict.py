@@ -21,6 +21,11 @@ def yosou(symbol, predicttime):
     # データの正規化
     data['y'] = data['Close'] / data['Close'].max()  # 予測対象の列の追加
 
+    # 欠損値の確認と処理
+    if data['y'].isnull().sum() > 0:
+        st.warning("予測対象のデータに欠損値があります。欠損値は削除されます。")
+        data = data.dropna(subset=['y'])
+
     # モデルの定義
     model = Prophet()
 
@@ -42,19 +47,6 @@ def yosou(symbol, predicttime):
     return predicted_price
 
 def main():
-    predicttime = 60
-    symbols = ["BTC-USD"]
-    
-    if st.button("ビットコインの1時間後の予測を実行"):
-        for symbol in symbols:
-            result = yosou(symbol, predicttime)
-            if result is not None:
-                st.write(f"{symbol}の1時間後の予測価格は: {result} USD")
-            else:
-                st.write(f"{symbol}の予測に失敗しました。")
-
-if __name__ == "__main__":
-    main()
     predicttime = 60
     symbols = ["BTC-USD"]
     
