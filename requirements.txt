@@ -5,3 +5,4 @@ pandas>=1.3.3
 lxml==4.9.4
 prophet
 yfinance
+numpy==1.21
