@@ -8,4 +8,4 @@ yfinance
 numpy==1.21
 scikit-learn  # SVR（サポートベクター回帰）を使用するために必要
 matplotlib  # データの可視化のために必要
-
+setuptools==58.0.4
