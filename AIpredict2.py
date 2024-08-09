@@ -3,6 +3,14 @@ import yfinance as yf
 import pandas as pd
 from sklearn.svm import SVR
 from sklearn.preprocessing import MinMaxScaler
+import numpy as np
+
+# 必要なライブラリがインストールされているかチェック
+try:
+    from sklearn.svm import SVR
+    from sklearn.preprocessing import MinMaxScaler
+except ImportError:
+    st.error("必要なライブラリが不足しています。パッケージをインストールしてください。")
 
 def yosou(symbol, predicttime):
     # データの取得
@@ -29,7 +37,7 @@ def yosou(symbol, predicttime):
         data = data.dropna(subset=['y'])
 
     # 特徴量とターゲットの定義
-    X = data.index.values.reshape(-1, 1)
+    X = np.array(data.index).reshape(-1, 1)  # 時系列のインデックスを特徴量として使用
     y = data['y'].values
 
     # SVRモデルの定義
@@ -39,7 +47,7 @@ def yosou(symbol, predicttime):
     model.fit(X, y)
 
     # 予測用のデータフレームを作成
-    future_index = pd.RangeIndex(start=len(data), stop=len(data) + predicttime, step=1).values.reshape(-1, 1)
+    future_index = np.arange(len(data), len(data) + predicttime).reshape(-1, 1)
 
     # 予測
     forecast = model.predict(future_index)
