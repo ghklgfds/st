@@ -12,9 +12,10 @@ def yosou(symbol, predicttime):
     if 'Datetime' in data.columns:
         data['ds'] = data['Datetime'].dt.tz_localize(None)
     elif 'Date' in data.columns:
+        data['Date'] = pd.to_datetime(data['Date'], errors='coerce')  # 日時型に変換
         data['ds'] = data['Date'].dt.tz_localize(None)
     else:
-        st.error("Datetime列が見つかりません")
+        st.error("Datetime列またはDate列が見つかりません")
         return None  # エラー時にNoneを返す
 
     # データの正規化
@@ -41,6 +42,19 @@ def yosou(symbol, predicttime):
     return predicted_price
 
 def main():
+    predicttime = 60
+    symbols = ["BTC-USD"]
+    
+    if st.button("ビットコインの1時間後の予測を実行"):
+        for symbol in symbols:
+            result = yosou(symbol, predicttime)
+            if result is not None:
+                st.write(f"{symbol}の1時間後の予測価格は: {result} USD")
+            else:
+                st.write(f"{symbol}の予測に失敗しました。")
+
+if __name__ == "__main__":
+    main()
     predicttime = 60
     symbols = ["BTC-USD"]
     
