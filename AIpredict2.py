@@ -7,6 +7,24 @@ from sklearn.svm import SVR
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+def upgrade_pip():
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip"])
+
+# pipをアップグレード
+upgrade_pip()
+
+# distutilsのインストール
+try:
+    import distutils
+except ModuleNotFoundError:
+    install('distutils')
+
 # 必要なライブラリがインストールされているかチェック
 try:
     from sklearn.svm import SVR
