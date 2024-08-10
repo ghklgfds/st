@@ -38,11 +38,16 @@ if st.button("検索"):
                         albums_data.append({
                             'アルバム名': album['name'],
                             'リリース日': album['release_date'],
-                            '総トラック数': album['total_tracks']
+                            'アルバムID': album['id']
                         })
                     
                     df = pd.DataFrame(albums_data)
-                    st.dataframe(df)
+                    
+                    for index, row in df.iterrows():
+                        with st.expander(row['アルバム名']):
+                            album_tracks = sp.album_tracks(row['アルバムID'])
+                            track_list = [track['name'] for track in album_tracks['items']]
+                            st.write(track_list)
                 else:
                     st.write("指定したアーティストのアルバム情報が見つかりませんでした。")
             else:
